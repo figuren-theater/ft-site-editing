@@ -1,0 +1,82 @@
+{
+	"name": "figuren-theater/ft-site-editing",
+	"description": "Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.",
+    "homepage": "https://websites.fuer.figuren.theater",
+    "type": "wordpress-muplugin",
+    "keywords": ["wordpress", "site-editor", "blocks", "block-patterns", "gutenberg"],
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "figuren.theater",
+            "email": "info@figuren.theater"
+        },
+        {
+            "name": "Carsten Bach",
+            "email": "mail@carsten-bach.de",
+            "homepage": "https://carsten-bach.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@figuren.theater",
+        "issues": "https://github.com/figuren-theater/ft-site-editing/issues",
+        "source": "https://github.com/figuren-theater/ft-site-editing"
+    },
+	"autoload": {
+		"files": [
+			"inc/copyright-block/namespace.php",
+            "inc/dinosaur-game/namespace.php",
+            "inc/gallery-block-lightbox/namespace.php",
+            "inc/newspaper-columns/namespace.php",
+            "inc/social-sharing-block/namespace.php",
+            "inc/superlist-block/namespace.php",
+            "inc/todo-block/namespace.php",
+			"inc/namespace.php"
+		],
+        "classmap": [
+            "inc/"
+        ]
+	},
+	"repositories": [
+		{
+            "type": "git",
+            "url": "https://github.com/figuren-theater/ft-options"
+        },
+		{
+			"type": "composer",
+			"url" : "https://wpackagist.org"
+		}
+	],
+	"require": {
+        "php": ">=7.2",
+        "figuren-theater/ft-options": "^1.1",
+        "wpackagist-plugin/copyright-block": "^0.1.1",
+		"wpackagist-plugin/dinosaur-game": "^1.0",
+        "wpackagist-plugin/gallery-block-lightbox": "^1.12",
+        "wpackagist-plugin/newspaper-columns": "^1.0",
+        "wpackagist-plugin/social-sharing-block": "^0.6.0",
+		"wpackagist-plugin/superlist-block": "^0.1.0",
+        "wpackagist-plugin/todo-block": "^1.0"
+	},
+    "extra": {
+        "altis": {
+            "install-overrides": [
+                "wpackagist-plugin/copyright-block",
+                "wpackagist-plugin/dinosaur-game",
+                "wpackagist-plugin/gallery-block-lightbox",
+                "wpackagist-plugin/newspaper-columns",
+                "wpackagist-plugin/social-sharing-block",
+                "wpackagist-plugin/superlist-block",
+                "wpackagist-plugin/todo-block"
+            ]
+        }
+    },
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	},
+	"require-dev": {
+		"wpackagist-plugin/gutenberg": "^14.6"
+	}
+}
