@@ -11,6 +11,9 @@ use Altis;
 use function Altis\register_module;
 
 
+const ASSETS_URL = WPMU_PLUGIN_URL . '/FT/ft-site-editing/assets/';
+
+
 /**
  * Register module.
  */

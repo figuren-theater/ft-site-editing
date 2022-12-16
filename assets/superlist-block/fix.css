@@ -1,0 +1,6 @@
+.wp-block-createwithrani-superlist-block.none > li {
+  margin-left: 0;
+}
+.wp-block-createwithrani-superlist-item:first-child > :first-child {
+  margin-top: 0;
+}
