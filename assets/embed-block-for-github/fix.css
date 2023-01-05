@@ -1,0 +1,6 @@
+/**
+ * Can be removed when Links are clickable by default
+ * and Issue#5 is fixed
+ * https://github.com/audrasjb/embed-block-for-github/issues/5#issuecomment-627904468
+ */
+ .ebg-br-wrapper > .ebg-br-background-image { pointer-events: none; }

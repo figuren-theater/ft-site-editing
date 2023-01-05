@@ -3,7 +3,7 @@
 	"description": "Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.",
     "homepage": "https://websites.fuer.figuren.theater",
     "type": "wordpress-muplugin",
-    "keywords": ["wordpress", "site-editor", "blocks", "block-patterns", "gutenberg"],
+    "keywords": ["wordpress", "wordpress-muplugin", "site-editor", "blocks", "block-pattern", "gutenberg"],
     "license": "GPL-3.0-or-later",
     "authors": [
         {
@@ -24,9 +24,13 @@
     },
 	"autoload": {
 		"files": [
-			"inc/copyright-block/namespace.php",
+			"inc/abbreviation-button-for-the-block-editor/namespace.php",
+            "inc/copyright-block/namespace.php",
             "inc/dinosaur-game/namespace.php",
+            "inc/embed-block-for-github/namespace.php",
+            "inc/ft-network-block-patterns/namespace.php",
             "inc/gallery-block-lightbox/namespace.php",
+            "inc/lang-attribute/namespace.php",
             "inc/newspaper-columns/namespace.php",
             "inc/social-sharing-block/namespace.php",
             "inc/superlist-block/namespace.php",
@@ -42,6 +46,10 @@
             "type": "git",
             "url": "https://github.com/figuren-theater/ft-options"
         },
+        {
+            "type": "git",
+            "url": "https://github.com/figuren-theater/ft-network-block-patterns"
+        },
 		{
 			"type": "composer",
 			"url" : "https://wpackagist.org"
@@ -50,9 +58,13 @@
 	"require": {
         "php": ">=7.2",
         "figuren-theater/ft-options": "^1.1",
+        "figuren-theater/ft-network-block-patterns": "^1.0",
+        "wpackagist-plugin/abbreviation-button-for-the-block-editor":"0.1",
         "wpackagist-plugin/copyright-block": "^0.1.1",
 		"wpackagist-plugin/dinosaur-game": "^1.0",
+        "wpackagist-plugin/embed-block-for-github":"^0.3",
         "wpackagist-plugin/gallery-block-lightbox": "^1.12",
+        "wpackagist-plugin/lang-attribute":"^0.3",
         "wpackagist-plugin/newspaper-columns": "^1.0",
         "wpackagist-plugin/social-sharing-block": "^0.6.0",
 		"wpackagist-plugin/superlist-block": "^0.1.0",
@@ -61,9 +73,12 @@
     "extra": {
         "altis": {
             "install-overrides": [
+                "wpackagist-plugin/abbreviation-button-for-the-block-editor",
                 "wpackagist-plugin/copyright-block",
                 "wpackagist-plugin/dinosaur-game",
+                "wpackagist-plugin/embed-block-for-github",
                 "wpackagist-plugin/gallery-block-lightbox",
+                "wpackagist-plugin/lang-attribute",
                 "wpackagist-plugin/newspaper-columns",
                 "wpackagist-plugin/social-sharing-block",
                 "wpackagist-plugin/superlist-block",

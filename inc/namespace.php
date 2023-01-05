@@ -23,6 +23,7 @@ function register() {
 		'enabled'                => true, // needs to be set
 		'copyright-block'        => true, // needed by ft-network-block-patterns
 		'dinosaur-game'          => false,
+		'embed-block-for-github' => true,
 		'gallery-block-lightbox' => true,
 		'newspaper-columns'      => true,
 		'superlist-block'        => true,
@@ -48,13 +49,19 @@ function register() {
 function bootstrap() {
 
 	// Plugins
+	Abbreviation_Button_For_The_Block_Editor\bootstrap();
 	Copyright_Block\bootstrap();
 	Dinosaur_Game\bootstrap();
+	Embed_Block_For_Github\bootstrap();
 	Gallery_Block_Lightbox\bootstrap();
+	Lang_Attribute\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
 	Superlist_Block\bootstrap();
 	Todo_Block\bootstrap();
+
+	// f.t
+	FT_Network_Block_Patterns\bootstrap();
 	
 	// Best practices
 	//...\bootstrap();
