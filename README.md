@@ -22,6 +22,9 @@ Thoose are completely managed by code and lack of their typical UI.
 
 * [figuren-theater/ft-network-block-patterns](https://github.com/figuren-theater/ft-network-block-patterns)
     Replaces block-patterns taken from themes with customized versions for the figuren.theater WordPress multisite network.
+* [carstingaxion/cbstdsys-post-subtitle](https://github.com/carstingaxion/cbstdsys-post-subtitle)
+    WordPress block to show and style a semantic subtitle. 
+
 
 ### as a --dev dependency
 

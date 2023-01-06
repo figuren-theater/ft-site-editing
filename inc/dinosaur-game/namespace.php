@@ -42,4 +42,10 @@ function load_plugin() {
 		return;
 	
 	require_once PLUGINPATH;
+
+	add_action( 'wp_enqueue_scripts', 'remove_scripts', 0 );
+}
+
+function remove_scripts() {
+	is_404() || remove_action( 'wp_enqueue_scripts', 'dinogame_js_css' );
 }

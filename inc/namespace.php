@@ -50,6 +50,7 @@ function bootstrap() {
 
 	// Plugins
 	Abbreviation_Button_For_The_Block_Editor\bootstrap();
+	Cbstdsys_Post_Subtitle\bootstrap();
 	Copyright_Block\bootstrap();
 	Dinosaur_Game\bootstrap();
 	Embed_Block_For_Github\bootstrap();
