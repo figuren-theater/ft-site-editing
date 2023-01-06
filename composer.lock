@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76a112f2f2675fc560be8e8a7b27b69a",
+    "content-hash": "997c9b060a72ac7a82cc71c17d145ff8",
     "packages": [
+        {
+            "name": "carstingaxion/cbstdsys-post-subtitle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle",
+                "reference": "6ac8f3871ce155457460f79198ecaff9832101c7"
+            },
+            "require": {
+                "johnpbloch/wordpress": "^6.0",
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Bach",
+                    "email": "mail@carsten-bach.de",
+                    "homepage": "https://carsten-bach.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress block to show and style a semantic subtitle.",
+            "homepage": "https://websites.fuer.figuren.theater",
+            "keywords": [
+                "block",
+                "site-editor",
+                "subtitle",
+                "wordpress",
+                "wordpress-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/carstingaxion/cbstdsys-post-subtitle/issues",
+                "source": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
+            },
+            "time": "2023-01-05T17:49:07+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.2.0",
@@ -594,7 +634,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "carstingaxion/cbstdsys-post-subtitle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
