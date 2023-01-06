@@ -1,6 +1,6 @@
 {
-	"name": "figuren-theater/ft-site-editing",
-	"description": "Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.",
+    "name": "figuren-theater/ft-site-editing",
+    "description": "Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.",
     "homepage": "https://websites.fuer.figuren.theater",
     "type": "wordpress-muplugin",
     "keywords": ["wordpress", "wordpress-muplugin", "site-editor", "blocks", "block-pattern", "gutenberg"],
@@ -22,10 +22,9 @@
         "issues": "https://github.com/figuren-theater/ft-site-editing/issues",
         "source": "https://github.com/figuren-theater/ft-site-editing"
     },
-	"autoload": {
-		"files": [
-			"inc/abbreviation-button-for-the-block-editor/namespace.php",
-            "inc/cbstdsys-post-subtitle/namespace.php",
+    "autoload": {
+        "files": [
+            "inc/abbreviation-button-for-the-block-editor/namespace.php",
             "inc/copyright-block/namespace.php",
             "inc/dinosaur-game/namespace.php",
             "inc/embed-block-for-github/namespace.php",
@@ -36,14 +35,14 @@
             "inc/social-sharing-block/namespace.php",
             "inc/superlist-block/namespace.php",
             "inc/todo-block/namespace.php",
-			"inc/namespace.php"
-		],
+            "inc/namespace.php"
+        ],
         "classmap": [
             "inc/"
         ]
-	},
-	"repositories": [
-		{
+    },
+    "repositories": [
+        {
             "type": "git",
             "url": "https://github.com/figuren-theater/ft-options"
         },
@@ -52,35 +51,29 @@
             "url": "https://github.com/figuren-theater/ft-network-block-patterns"
         },
         {
-            "type": "git",
-            "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
-        },
-		{
-			"type": "composer",
-			"url" : "https://wpackagist.org"
-		}
-	],
-	"require": {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        }
+    ],
+    "require": {
         "php": ">=7.2",
         "figuren-theater/ft-options": "^1.1",
         "figuren-theater/ft-network-block-patterns": "^1.0",
-        "carstingaxion/cbstdsys-post-subtitle": "dev-master",
         "wpackagist-plugin/abbreviation-button-for-the-block-editor":"0.1",
         "wpackagist-plugin/copyright-block": "^0.1.1",
-		"wpackagist-plugin/dinosaur-game": "^1.0",
+        "wpackagist-plugin/dinosaur-game": "^1.0",
         "wpackagist-plugin/embed-block-for-github":"^0.3",
         "wpackagist-plugin/gallery-block-lightbox": "^1.12",
         "wpackagist-plugin/lang-attribute":"^0.3",
         "wpackagist-plugin/newspaper-columns": "^1.0",
         "wpackagist-plugin/social-sharing-block": "^0.6.0",
-		"wpackagist-plugin/superlist-block": "^0.1.0",
+        "wpackagist-plugin/superlist-block": "^0.1.0",
         "wpackagist-plugin/todo-block": "^1.0"
-	},
+    },
     "extra": {
         "altis": {
             "install-overrides": [
                 "figuren-theater/ft-network-block-patterns",
-                "carstingaxion/cbstdsys-post-subtitle",
                 "wpackagist-plugin/abbreviation-button-for-the-block-editor",
                 "wpackagist-plugin/copyright-block",
                 "wpackagist-plugin/dinosaur-game",
@@ -94,12 +87,12 @@
             ]
         }
     },
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
-	},
-	"require-dev": {
-		"wpackagist-plugin/gutenberg": "^14.6"
-	}
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "require-dev": {
+        "wpackagist-plugin/gutenberg": "^14.6"
+    }
 }
