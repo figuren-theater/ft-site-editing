@@ -25,6 +25,7 @@
     "autoload": {
         "files": [
             "inc/abbreviation-button-for-the-block-editor/namespace.php",
+            "inc/cbstdsys-post-subtitle/namespace.php",
             "inc/copyright-block/namespace.php",
             "inc/dinosaur-game/namespace.php",
             "inc/embed-block-for-github/namespace.php",
@@ -51,6 +52,10 @@
             "url": "https://github.com/figuren-theater/ft-network-block-patterns"
         },
         {
+            "type": "git",
+            "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
+        },
+        {
             "type": "composer",
             "url" : "https://wpackagist.org"
         }
@@ -59,6 +64,7 @@
         "php": ">=7.2",
         "figuren-theater/ft-options": "^1.1",
         "figuren-theater/ft-network-block-patterns": "^1.0",
+        "carstingaxion/cbstdsys-post-subtitle": "dev-master",
         "wpackagist-plugin/abbreviation-button-for-the-block-editor":"0.1",
         "wpackagist-plugin/copyright-block": "^0.1.1",
         "wpackagist-plugin/dinosaur-game": "^1.0",
@@ -74,6 +80,7 @@
         "altis": {
             "install-overrides": [
                 "figuren-theater/ft-network-block-patterns",
+                "carstingaxion/cbstdsys-post-subtitle",
                 "wpackagist-plugin/abbreviation-button-for-the-block-editor",
                 "wpackagist-plugin/copyright-block",
                 "wpackagist-plugin/dinosaur-game",
