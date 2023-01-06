@@ -23,7 +23,7 @@ function register() {
 		'enabled'                => true, // needs to be set
 		'copyright-block'        => true, // needed by ft-network-block-patterns
 		'dinosaur-game'          => false,
-		'embed-block-for-github' => true,
+		'embed-block-for-github' => false,
 		'gallery-block-lightbox' => true,
 		'newspaper-columns'      => true,
 		'superlist-block'        => true,

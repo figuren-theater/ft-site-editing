@@ -9,6 +9,9 @@ namespace Figuren_Theater\Site_Editing\Embed_Block_For_Github;
 
 use FT_VENDOR_DIR;
 
+use Figuren_Theater;
+use function Figuren_Theater\get_config;
+
 use function add_action;
 use function is_admin;
 use function is_network_admin;

@@ -43,7 +43,7 @@ function load_plugin() {
 	
 	require_once PLUGINPATH;
 
-	add_action( 'wp_enqueue_scripts', 'remove_scripts', 0 );
+	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\remove_scripts', 0 );
 }
 
 function remove_scripts() {

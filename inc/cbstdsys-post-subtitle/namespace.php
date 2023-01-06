@@ -16,7 +16,6 @@ use function is_user_admin;
 
 const BASENAME   = 'cbstdsys-post-subtitle/cbstdsys-post-subtitle.php';
 const PLUGINPATH = FT_VENDOR_DIR . '/carstingaxion/' . BASENAME;
-// const PLUGINPATH = WP_PLUGIN_DIR . '/' . BASENAME;
 
 /**
  * Bootstrap module, when enabled.
