@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24bf343e68b27b7f3ad668e17f3c1189",
+    "content-hash": "f68bd315a8e028c62d38afd9e18b757e",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
