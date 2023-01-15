@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e44a9f3ede5fdc6ae0dcaed4ced05682",
+    "content-hash": "24bf343e68b27b7f3ad668e17f3c1189",
     "packages": [
+        {
+            "name": "carstingaxion/cbstdsys-post-subtitle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle",
+                "reference": "6ac8f3871ce155457460f79198ecaff9832101c7"
+            },
+            "require": {
+                "johnpbloch/wordpress": "^6.0",
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Bach",
+                    "email": "mail@carsten-bach.de",
+                    "homepage": "https://carsten-bach.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress block to show and style a semantic subtitle.",
+            "homepage": "https://websites.fuer.figuren.theater",
+            "keywords": [
+                "block",
+                "site-editor",
+                "subtitle",
+                "wordpress",
+                "wordpress-plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/carstingaxion/cbstdsys-post-subtitle/issues",
+                "source": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
+            },
+            "time": "2023-01-05T17:49:07+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.2.0",
@@ -575,15 +615,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "14.9.0",
+            "version": "14.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/14.9.0"
+                "reference": "tags/14.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.9.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -594,7 +634,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "carstingaxion/cbstdsys-post-subtitle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -100,6 +100,6 @@
         }
     },
     "require-dev": {
-        "wpackagist-plugin/gutenberg": "^14.6"
+        "wpackagist-plugin/gutenberg": ">14.9"
     }
 }
