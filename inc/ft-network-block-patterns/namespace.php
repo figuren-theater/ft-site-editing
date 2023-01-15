@@ -10,7 +10,6 @@ namespace Figuren_Theater\Site_Editing\FT_Network_Block_Patterns;
 use WP_PLUGIN_DIR;
 
 use function add_action;
-use function is_admin;
 use function is_network_admin;
 use function is_user_admin;
 
@@ -32,7 +31,7 @@ function load_plugin() {
 	// - public views
 	// - network-admin views
 	// - user-admin views
-	if ( ! is_admin() || is_network_admin() || is_user_admin() )
+	if ( is_network_admin() || is_user_admin() )
 		return;
 	
 	require_once PLUGINPATH;
