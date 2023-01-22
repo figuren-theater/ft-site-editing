@@ -58,7 +58,7 @@ function bootstrap() {
 	Lang_Attribute\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
-	Superlist_Block\bootstrap();
+#	Superlist_Block\bootstrap();
 	Todo_Block\bootstrap();
 
 	// f.t
