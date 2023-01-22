@@ -7,7 +7,7 @@
 
 namespace Figuren_Theater\Site_Editing\FT_Network_Block_Patterns;
 
-use WP_PLUGIN_DIR;
+use FT_VENDOR_DIR;
 
 use function add_action;
 use function is_network_admin;

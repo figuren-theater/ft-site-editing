@@ -7,10 +7,9 @@
 
 namespace Figuren_Theater\Site_Editing\Cbstdsys_Post_Subtitle;
 
-use WP_PLUGIN_DIR;
+use FT_VENDOR_DIR;
 
 use function add_action;
-use function is_admin;
 use function is_network_admin;
 use function is_user_admin;
 
