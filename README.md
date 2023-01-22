@@ -13,6 +13,7 @@ Thoose are completely managed by code and lack of their typical UI.
 * [Copyright Block](https://wordpress.org/plugins/copyright-block/#developers)
 * [Dinosaur Game](https://wordpress.org/plugins/dinosaur-game/#developers)
 * [Embed Block for GitHub](https://wordpress.org/plugins/embed-block-for-github/#developers)
+* [Icon Block](https://wordpress.org/plugins/icon-block/#developers)
 * [Lang Attribute for the Block Editor](https://wordpress.org/plugins/lang-attribute/#developers)
 * [Lightbox for Gallery & Image Block](https://wordpress.org/plugins/gallery-block-lightbox/#developers)
 * [Newspaper Columns](https://wordpress.org/plugins/newspaper-columns/#developers)

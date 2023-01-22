@@ -55,6 +55,7 @@ function bootstrap() {
 	Dinosaur_Game\bootstrap();
 	Embed_Block_For_Github\bootstrap();
 	Gallery_Block_Lightbox\bootstrap();
+	Icon_Block\bootstrap();
 	Lang_Attribute\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
