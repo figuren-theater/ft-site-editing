@@ -238,11 +238,11 @@
         },
         {
             "name": "figuren-theater/ft-options",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-options",
-                "reference": "8f9eb36dbcb754bbec3f4242de239f77a4086349"
+                "reference": "f9d904e5debdcf475b575dc5be90b9122f83c231"
             },
             "require": {
                 "markjaquith/wp-tlc-transients": "^1.0",
@@ -282,7 +282,7 @@
                 "issues": "https://github.com/figuren-theater/ft-options/issues",
                 "source": "https://github.com/figuren-theater/ft-options"
             },
-            "time": "2023-01-16T01:21:11+00:00"
+            "time": "2023-01-17T20:48:17+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -552,15 +552,15 @@
         },
         {
             "name": "wpackagist-plugin/gallery-block-lightbox",
-            "version": "1.12",
+            "version": "1.13",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gallery-block-lightbox/",
-                "reference": "tags/1.12"
+                "reference": "tags/1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gallery-block-lightbox.1.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/gallery-block-lightbox.1.13.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -680,15 +680,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "14.9.1",
+            "version": "15.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/14.9.1"
+                "reference": "tags/15.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.14.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
