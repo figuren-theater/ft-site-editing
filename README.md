@@ -21,6 +21,8 @@ Thoose are completely managed by code and lack of their typical UI.
 * [Superlist Block](https://wordpress.org/plugins/superlist-block/#developers)
 * [Todo Block](https://wordpress.org/plugins/todo-block/#developers)
 
+* [figuren-theater/ft-network-block-editor](https://github.com/figuren-theater/ft-network-block-editor)
+    Changes and additions to the WordPress core block-editor and site-editor, formerly known as Gutenberg, made for the figuren.theater Multisite network.
 * [figuren-theater/ft-network-block-patterns](https://github.com/figuren-theater/ft-network-block-patterns)
     Replaces block-patterns taken from themes with customized versions for the figuren.theater WordPress multisite network.
 * [carstingaxion/cbstdsys-post-subtitle](https://github.com/carstingaxion/cbstdsys-post-subtitle)

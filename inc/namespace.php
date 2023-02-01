@@ -63,6 +63,7 @@ function bootstrap() {
 	Todo_Block\bootstrap();
 
 	// f.t
+	FT_Network_Block_Editor\bootstrap();
 	FT_Network_Block_Patterns\bootstrap();
 	
 	// Best practices
