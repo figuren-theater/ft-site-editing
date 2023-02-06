@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c8b5b07bf8b531db3aaca45501c7f9c",
+    "content-hash": "19a08ca916f141b7ad3411d478a482ab",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -192,6 +192,46 @@
             "time": "2022-08-20T06:45:11+00:00"
         },
         {
+            "name": "figuren-theater/ft-network-block-editor",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/figuren-theater/ft-network-block-editor",
+                "reference": "e31980100895fbddae03e3a2105ef9d8949344b6"
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "figuren.theater",
+                    "email": "info@figuren.theater"
+                },
+                {
+                    "name": "Carsten Bach",
+                    "email": "mail@carsten-bach.de",
+                    "homepage": "https://carsten-bach.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Changes and additions to the WordPress core block-editor and site-editor, formerly known as Gutenberg, made for the figuren.theater Multisite network.",
+            "homepage": "https://websites.fuer.figuren.theater",
+            "keywords": [
+                "wordpress",
+                "wordpress-plugin"
+            ],
+            "support": {
+                "email": "info@figuren.theater",
+                "issues": "https://github.com/figuren-theater/ft-network-block-editor/issues",
+                "source": "https://github.com/figuren-theater/ft-network-block-editor"
+            },
+            "time": "2023-02-01T21:31:05+00:00"
+        },
+        {
             "name": "figuren-theater/ft-network-block-patterns",
             "version": "1.0.2",
             "source": {
@@ -238,11 +278,11 @@
         },
         {
             "name": "figuren-theater/ft-options",
-            "version": "1.1.9",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-options",
-                "reference": "f9d904e5debdcf475b575dc5be90b9122f83c231"
+                "reference": "6ac6d17165a472f1927fe42f891d62a79abb5765"
             },
             "require": {
                 "markjaquith/wp-tlc-transients": "^1.0",
@@ -269,7 +309,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Options Management for a WordPress Multisite like figuren.theater",
+            "description": "Options management via code for a WordPress multisite like figuren.theater",
             "homepage": "https://websites.fuer.figuren.theater",
             "keywords": [
                 "multisite",
@@ -282,7 +322,7 @@
                 "issues": "https://github.com/figuren-theater/ft-options/issues",
                 "source": "https://github.com/figuren-theater/ft-options"
             },
-            "time": "2023-01-17T20:48:17+00:00"
+            "time": "2023-02-02T15:23:09+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -497,6 +537,24 @@
             "homepage": "https://wordpress.org/plugins/abbreviation-button-for-the-block-editor/"
         },
         {
+            "name": "wpackagist-plugin/block-visibility",
+            "version": "2.5.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/block-visibility/",
+                "reference": "tags/2.5.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.2.5.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/block-visibility/"
+        },
+        {
             "name": "wpackagist-plugin/copyright-block",
             "version": "0.1.1",
             "source": {
@@ -605,6 +663,24 @@
             "homepage": "https://wordpress.org/plugins/lang-attribute/"
         },
         {
+            "name": "wpackagist-plugin/markdown-comment-block",
+            "version": "0.1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/markdown-comment-block/",
+                "reference": "tags/0.1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/markdown-comment-block.0.1.9.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/markdown-comment-block/"
+        },
+        {
             "name": "wpackagist-plugin/newspaper-columns",
             "version": "1.0.0",
             "source": {
@@ -680,15 +756,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.0.0",
+            "version": "15.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.0.0"
+                "reference": "tags/15.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.0.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
