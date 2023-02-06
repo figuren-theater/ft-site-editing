@@ -21,10 +21,12 @@ function register() {
 
 	$default_settings = [
 		'enabled'                => true, // needs to be set
+		'block-visibility'       => false,
 		'copyright-block'        => true, // needed by ft-network-block-patterns
 		'dinosaur-game'          => false,
 		'embed-block-for-github' => false,
 		'gallery-block-lightbox' => true,
+		'markdown-comment-block' => false,
 		'newspaper-columns'      => true,
 		'superlist-block'        => true,
 		'social-sharing-block'   => true,
@@ -50,6 +52,7 @@ function bootstrap() {
 
 	// Plugins
 	Abbreviation_Button_For_The_Block_Editor\bootstrap();
+	Block_Visibility\bootstrap();
 	Cbstdsys_Post_Subtitle\bootstrap();
 	Copyright_Block\bootstrap();
 	Dinosaur_Game\bootstrap();
@@ -57,6 +60,7 @@ function bootstrap() {
 	Gallery_Block_Lightbox\bootstrap();
 	Icon_Block\bootstrap();
 	Lang_Attribute\bootstrap();
+	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
 #	Superlist_Block\bootstrap();

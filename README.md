@@ -65,11 +65,14 @@ Thoose are completely managed by code and lack of their typical UI.
 
 * [Abbreviation Button for the Block Editor](https://wordpress.org/plugins/abbreviation-button-for-the-block-editor/#developers)
 * [Copyright Block](https://wordpress.org/plugins/copyright-block/#developers)
+* [Block Visibility](https://wordpress.org/plugins/block-visibility/#developers)
+    Conditional Visibility Control for the Block Editor
 * [Dinosaur Game](https://wordpress.org/plugins/dinosaur-game/#developers)
 * [Embed Block for GitHub](https://wordpress.org/plugins/embed-block-for-github/#developers)
 * [Icon Block](https://wordpress.org/plugins/icon-block/#developers)
 * [Lang Attribute for the Block Editor](https://wordpress.org/plugins/lang-attribute/#developers)
 * [Lightbox for Gallery & Image Block](https://wordpress.org/plugins/gallery-block-lightbox/#developers)
+* [Markdown Comment Block](https://wordpress.org/plugins/markdown-comment-block/#developers)
 * [Newspaper Columns](https://wordpress.org/plugins/newspaper-columns/#developers)
 * [Social Sharing Block](https://wordpress.org/plugins/social-sharing-block/#developers)
 * [Superlist Block](https://wordpress.org/plugins/superlist-block/#developers)
