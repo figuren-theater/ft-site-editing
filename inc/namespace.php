@@ -59,6 +59,7 @@ function bootstrap() {
 	Embed_Block_For_Github\bootstrap();
 	Gallery_Block_Lightbox\bootstrap();
 	Icon_Block\bootstrap();
+	Image_Source_Control_ISC\bootstrap();
 	Lang_Attribute\bootstrap();
 	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();

@@ -70,6 +70,7 @@ Thoose are completely managed by code and lack of their typical UI.
 * [Dinosaur Game](https://wordpress.org/plugins/dinosaur-game/#developers)
 * [Embed Block for GitHub](https://wordpress.org/plugins/embed-block-for-github/#developers)
 * [Icon Block](https://wordpress.org/plugins/icon-block/#developers)
+* [Image Source Control](https://wordpress.org/plugins/image-source-control-isc/#developers)
 * [Lang Attribute for the Block Editor](https://wordpress.org/plugins/lang-attribute/#developers)
 * [Lightbox for Gallery & Image Block](https://wordpress.org/plugins/gallery-block-lightbox/#developers)
 * [Markdown Comment Block](https://wordpress.org/plugins/markdown-comment-block/#developers)
