@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19a08ca916f141b7ad3411d478a482ab",
+    "content-hash": "c35bb751c92be585fc95b36466ba30f0",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -193,11 +193,11 @@
         },
         {
             "name": "figuren-theater/ft-network-block-editor",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-editor",
-                "reference": "e31980100895fbddae03e3a2105ef9d8949344b6"
+                "reference": "07f263d8e0e069aa55f7b4ec04372d8666e5267e"
             },
             "require": {
                 "php": ">=7.1"
@@ -229,7 +229,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-editor/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-editor"
             },
-            "time": "2023-02-01T21:31:05+00:00"
+            "time": "2023-02-04T06:56:50+00:00"
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
@@ -538,15 +538,15 @@
         },
         {
             "name": "wpackagist-plugin/block-visibility",
-            "version": "2.5.3",
+            "version": "2.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-visibility/",
-                "reference": "tags/2.5.3"
+                "reference": "tags/2.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-visibility.2.5.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.2.6.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -643,6 +643,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/icon-block/"
+        },
+        {
+            "name": "wpackagist-plugin/image-source-control-isc",
+            "version": "2.10.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/image-source-control-isc/",
+                "reference": "tags/2.10.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.10.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/image-source-control-isc/"
         },
         {
             "name": "wpackagist-plugin/lang-attribute",
@@ -756,15 +774,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.0.1",
+            "version": "15.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.0.1"
+                "reference": "tags/15.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.1.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
