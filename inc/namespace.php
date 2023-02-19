@@ -20,17 +20,18 @@ const ASSETS_URL = WPMU_PLUGIN_URL . '/FT/ft-site-editing/assets/';
 function register() {
 
 	$default_settings = [
-		'enabled'                => true, // needs to be set
-		'block-visibility'       => false,
-		'copyright-block'        => true, // needed by ft-network-block-patterns
-		'dinosaur-game'          => false,
-		'embed-block-for-github' => false,
-		'gallery-block-lightbox' => true,
-		'markdown-comment-block' => false,
-		'newspaper-columns'      => true,
-		'superlist-block'        => true,
-		'social-sharing-block'   => true,
-		'todo-block'             => true,
+		'enabled'                  => true, // needs to be set
+		'block-visibility'         => false,
+		'copyright-block'          => true, // needed by ft-network-block-patterns
+		'dinosaur-game'            => false,
+		'embed-block-for-github'   => false,
+		'gallery-block-lightbox'   => true,
+		'image-source-control-isc' => false, // used by 
+		'markdown-comment-block'   => false,
+		'newspaper-columns'        => true, // needed by ft-network-block-patterns
+		'superlist-block'          => true, // needed by ft-network-block-patterns + Impressum
+		'social-sharing-block'     => true, // needed by ft-network-block-patterns
+		'todo-block'               => true, // needed by ft-network-block-patterns
 	];
 	$options = [
 		'defaults' => $default_settings,

@@ -1,16 +1,18 @@
 <?php
 /**
- * Figuren_Theater Media Image_Source_Control_ISC.
+ * Figuren_Theater Site_Editing Image_Source_Control_ISC.
  *
- * @package figuren-theater/media/image_source_control_isc
+ * @package figuren-theater/site_editing/image_source_control_isc
  */
 
-namespace Figuren_Theater\Media\Image_Source_Control_ISC;
+namespace Figuren_Theater\Site_Editing\Image_Source_Control_ISC;
 
 use FT_VENDOR_DIR;
 
-use Figuren_Theater\Media;
+use Figuren_Theater;
+use Figuren_Theater\Site_Editing;
 use Figuren_Theater\Options;
+use function Figuren_Theater\get_config;
 
 use ISC_Admin;
 use ISCVERSION;
@@ -21,7 +23,9 @@ use function add_action;
 use function add_filter;
 use function do_blocks;
 use function get_option;
+use function is_admin;
 use function is_network_admin;
+use function is_user_admin;
 use function remove_action;
 use function remove_submenu_page;
 
@@ -41,17 +45,24 @@ function bootstrap() {
 
 function load_plugin() {
 
-	if ( is_network_admin() )
+	$config = Figuren_Theater\get_config()['modules']['site_editing'];
+	if ( ! $config['image-source-control-isc'] )
+		return; // early
+	
+	if ( is_network_admin() || is_user_admin() )
 		return;
 	
 	require_once PLUGINPATH;
 
 	add_filter( 'pre_option_' . OPTION, __NAMESPACE__ . '\\re_set_dynamic_options', 20 );
-	
-	add_filter( 'attachment_fields_to_edit', __NAMESPACE__ . '\\remove_attachment_fields', 20, 2 );
 
 	// fake a table-block, to load its styles
 	add_filter( 'do_shortcode_tag', __NAMESPACE__ . '\\load_block_table_styles', 10, 3 );
+
+	if ( ! is_admin() )
+		return;
+
+	add_filter( 'attachment_fields_to_edit', __NAMESPACE__ . '\\remove_attachment_fields', 20, 2 );
 
 	add_action( 'admin_notices', __NAMESPACE__ . '\\remove_notices', 0 );
 	add_action( 'admin_menu', __NAMESPACE__ . '\\remove_menu', 11 );
@@ -59,8 +70,6 @@ function load_plugin() {
 	// remove "Additional Images" from "Sources" Page, 
 	// because it was reduced to just a big ad.
 	add_action( 'admin_footer-media_page_isc-sources', __NAMESPACE__ . '\\remove_part_of_sources' );
-	
-	// add_action( 'after_setup_theme', __NAMESPACE__ . '\\enqueue_css_fix' );
 }
 
 function filter_options() {
@@ -75,8 +84,8 @@ function filter_options() {
 		'version'                   => '', // will be re-set after ENABLE // prevents auto-updates of this options-field
 		'thumbnail_in_list'         => false,
 		'thumbnail_size'            => 'thumbnail',
-		'thumbnail_width'           => 150,
-		'thumbnail_height'          => 150,
+		'thumbnail_width'           => 150, // will be re-set after ENABLE 
+		'thumbnail_height'          => 150, // will be re-set after ENABLE 
 		// 'warning_onesource_missing' will be changed by Feature 'advanced-isc'
 		'warning_onesource_missing' => false,
 		'remove_on_uninstall'       => false,
@@ -135,6 +144,8 @@ function re_set_dynamic_options( array|bool $option ) : array {
 	$option['standard_source_text'] = '© ' . $_blogname;
 	// $option['image_list_headline']  = __('Image Sources','image-source-control-isc');
 	$option['source_pretext']       = __( 'Source:', 'image-source-control-isc' );
+	$option['thumbnail_width']      = get_option( 'thumbnail_size_w', 150 ); 
+	$option['thumbnail_height']     = get_option( 'thumbnail_size_h', 150 ); 
 	
 	return $option;
 }
@@ -151,7 +162,7 @@ function remove_attachment_fields( array $fields, WP_POST $attachment ) : array 
  * 
  * @uses    https://developer.wordpress.org/reference/hooks/do_shortcode_tag/
  *
- * @package figuren-theater/media/image_source_control_isc
+ * @package figuren-theater/site_editing/image_source_control_isc
  *
  * @param   string       $output Shortcode output.
  * @param   string       $tag    Shortcode name.
@@ -169,7 +180,7 @@ function load_block_table_styles( string $output, string $tag, array|string $att
 	// related scripts and styles
 	do_blocks( '<!-- wp:table {"className":"is-style-stripes"} --><!-- /wp:table -->' );
 
-	enqueue_css_fix();
+	__enqueue_css_fix();
 
 	return $output;
 }
@@ -199,15 +210,15 @@ function remove_part_of_sources() {
 }
 
 
-function enqueue_css_fix() {
+function __enqueue_css_fix() {
 	// Same args used for wp_enqueue_style().
 	$args = array(
 		'handle' => 'image-source-control-isc-fix',
-		'src'    => Media\ASSETS_URL .'image-source-control-isc/fix.css',
+		'src'    => Site_Editing\ASSETS_URL .'image-source-control-isc/fix.css',
 	);
 
 	// Add "path" to allow inlining asset if the theme opts-in.
-	$args['path'] = Media\DIRECTORY . 'assets/image-source-control-isc/fix.css';
+	$args['path'] = Site_Editing\DIRECTORY . 'assets/image-source-control-isc/fix.css';
 
 	// Enqueue asset.
 	wp_enqueue_block_style( 'core/table', $args );
