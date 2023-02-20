@@ -193,11 +193,11 @@
         },
         {
             "name": "figuren-theater/ft-network-block-editor",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-editor",
-                "reference": "07f263d8e0e069aa55f7b4ec04372d8666e5267e"
+                "reference": "efbf9b5f4dd545efc42e551e4583d5554e3d1169"
             },
             "require": {
                 "php": ">=7.1"
@@ -229,7 +229,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-editor/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-editor"
             },
-            "time": "2023-02-04T06:56:50+00:00"
+            "time": "2023-02-18T17:48:04+00:00"
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
