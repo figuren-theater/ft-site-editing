@@ -21,6 +21,7 @@ use WP_POST;
 
 use function add_action;
 use function add_filter;
+use function did_action;
 use function do_blocks;
 use function get_option;
 use function is_admin;
@@ -28,6 +29,7 @@ use function is_network_admin;
 use function is_user_admin;
 use function remove_action;
 use function remove_submenu_page;
+use function wp_installing;
 
 const BASENAME   = 'image-source-control-isc/isc.php';
 const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
@@ -49,7 +51,11 @@ function load_plugin() {
 	if ( ! $config['image-source-control-isc'] )
 		return; // early
 	
-	if ( is_network_admin() || is_user_admin() )
+	if ( is_network_admin() || 
+		 is_user_admin() ||
+		 wp_installing() || 
+		 did_action( 'wp_initialize_site' )
+	)
 		return;
 	
 	require_once PLUGINPATH;
