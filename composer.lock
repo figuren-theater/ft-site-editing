@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c35bb751c92be585fc95b36466ba30f0",
+    "content-hash": "74ee14f6b72a46b75142e2e72d801206",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
-            "version": "dev-master",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle",
-                "reference": "6ac8f3871ce155457460f79198ecaff9832101c7"
+                "reference": "cdc5a84cd178023e07f19c8d1c31b074d53f4063"
             },
             "require": {
                 "johnpbloch/wordpress": "^6.0",
                 "php": ">=7.1"
             },
-            "default-branch": true,
             "type": "wordpress-plugin",
             "license": [
                 "GPL-3.0-or-later"
@@ -44,7 +43,7 @@
                 "issues": "https://github.com/carstingaxion/cbstdsys-post-subtitle/issues",
                 "source": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
             },
-            "time": "2023-01-05T17:49:07+00:00"
+            "time": "2023-03-05T14:17:35+00:00"
         },
         {
             "name": "composer/installers",
@@ -193,11 +192,11 @@
         },
         {
             "name": "figuren-theater/ft-network-block-editor",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-editor",
-                "reference": "07f263d8e0e069aa55f7b4ec04372d8666e5267e"
+                "reference": "efbf9b5f4dd545efc42e551e4583d5554e3d1169"
             },
             "require": {
                 "php": ">=7.1"
@@ -229,15 +228,15 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-editor/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-editor"
             },
-            "time": "2023-02-04T06:56:50+00:00"
+            "time": "2023-02-18T17:48:04+00:00"
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-patterns",
-                "reference": "e6164d9ad966a0211280816a5db6fa8f1605bc03"
+                "reference": "3405eca93629b2a1bf616187d015c9b8b212c4d0"
             },
             "require": {
                 "johnpbloch/wordpress": "^6.0",
@@ -274,7 +273,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-patterns/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-patterns"
             },
-            "time": "2023-01-05T12:58:06+00:00"
+            "time": "2023-02-24T12:01:48+00:00"
         },
         {
             "name": "figuren-theater/ft-options",
@@ -537,6 +536,24 @@
             "homepage": "https://wordpress.org/plugins/abbreviation-button-for-the-block-editor/"
         },
         {
+            "name": "wpackagist-plugin/block-catalog",
+            "version": "1.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/block-catalog/",
+                "reference": "tags/1.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/block-catalog.1.4.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/block-catalog/"
+        },
+        {
             "name": "wpackagist-plugin/block-visibility",
             "version": "2.6.0",
             "source": {
@@ -646,15 +663,15 @@
         },
         {
             "name": "wpackagist-plugin/image-source-control-isc",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/image-source-control-isc/",
-                "reference": "tags/2.10.0"
+                "reference": "tags/2.11.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.10.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.11.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -774,15 +791,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.1.1",
+            "version": "15.2.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.1.1"
+                "reference": "tags/15.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.2.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -793,9 +810,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "carstingaxion/cbstdsys-post-subtitle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

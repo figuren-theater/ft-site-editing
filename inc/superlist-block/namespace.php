@@ -7,7 +7,7 @@
 
 namespace Figuren_Theater\Site_Editing\Superlist_Block;
 
-use FT_VENDOR_DIR;
+use WP_PLUGIN_DIR;
 
 use Figuren_Theater\Site_Editing;
 
@@ -17,7 +17,16 @@ use function is_user_admin;
 use function wp_enqueue_block_style;
 
 const BASENAME   = 'superlist-block/superlist-block.php';
-const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
+/*
+ * @TODO
+ * 
+ * Use own build version, until issue is fixed.
+ * 
+ * @see https://github.com/figuren-theater/ft-site-editing/issues/18
+ */
+// const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
+const PLUGINPATH = WP_PLUGIN_DIR . '/' . BASENAME; 
+
 
 /**
  * Bootstrap module, when enabled.
