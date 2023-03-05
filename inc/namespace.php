@@ -67,8 +67,8 @@ function bootstrap() {
 	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
-#	Superlist_Block\bootstrap();
 	Todo_Block\bootstrap();
+	Superlist_Block\bootstrap();
 
 	// f.t
 	FT_Network_Block_Editor\bootstrap();
