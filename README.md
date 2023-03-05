@@ -65,6 +65,7 @@ Thoose are completely managed by code and lack of their typical UI.
 
 * [Abbreviation Button for the Block Editor](https://wordpress.org/plugins/abbreviation-button-for-the-block-editor/#developers)
 * [Copyright Block](https://wordpress.org/plugins/copyright-block/#developers)
+* [Block Catalog](https://wordpress.org/plugins/block-catalog/#developers)
 * [Block Visibility](https://wordpress.org/plugins/block-visibility/#developers)
     Conditional Visibility Control for the Block Editor
 * [Dinosaur Game](https://wordpress.org/plugins/dinosaur-game/#developers)

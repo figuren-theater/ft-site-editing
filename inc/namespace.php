@@ -21,6 +21,7 @@ function register() {
 
 	$default_settings = [
 		'enabled'                  => true, // needs to be set
+		'block-catalog'            => false,
 		'block-visibility'         => false,
 		'copyright-block'          => true, // needed by ft-network-block-patterns
 		'dinosaur-game'            => false,
@@ -53,6 +54,7 @@ function bootstrap() {
 
 	// Plugins
 	Abbreviation_Button_For_The_Block_Editor\bootstrap();
+#	Block_Catalog\bootstrap(); // keep disabled, for now ;)
 	Block_Visibility\bootstrap();
 	Cbstdsys_Post_Subtitle\bootstrap();
 	Copyright_Block\bootstrap();
