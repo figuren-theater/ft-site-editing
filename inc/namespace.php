@@ -67,8 +67,8 @@ function bootstrap() {
 	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
-	Todo_Block\bootstrap();
 	Superlist_Block\bootstrap();
+	Todo_Block\bootstrap(); // JS annoying console.log // https://github.com/figuren-theater/ft-site-editing/issues/15
 
 	// f.t
 	FT_Network_Block_Editor\bootstrap();
