@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74ee14f6b72a46b75142e2e72d801206",
+    "content-hash": "586bea35c02c6845e53f2035490e5ac2",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -555,15 +555,15 @@
         },
         {
             "name": "wpackagist-plugin/block-visibility",
-            "version": "2.6.0",
+            "version": "3.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-visibility/",
-                "reference": "tags/2.6.0"
+                "reference": "tags/3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-visibility.2.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -645,15 +645,15 @@
         },
         {
             "name": "wpackagist-plugin/icon-block",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/icon-block/",
-                "reference": "tags/1.4.0"
+                "reference": "tags/1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/icon-block.1.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/icon-block.1.5.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -753,15 +753,15 @@
         },
         {
             "name": "wpackagist-plugin/superlist-block",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/superlist-block/",
-                "reference": "tags/0.1.0"
+                "reference": "tags/0.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/superlist-block.0.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/superlist-block.0.1.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -791,15 +791,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.2.4",
+            "version": "15.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.2.4"
+                "reference": "tags/15.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.6.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
