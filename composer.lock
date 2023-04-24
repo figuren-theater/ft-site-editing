@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74ee14f6b72a46b75142e2e72d801206",
+    "content-hash": "586bea35c02c6845e53f2035490e5ac2",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -555,15 +555,15 @@
         },
         {
             "name": "wpackagist-plugin/block-visibility",
-            "version": "2.6.0",
+            "version": "3.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-visibility/",
-                "reference": "tags/2.6.0"
+                "reference": "tags/3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-visibility.2.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.0.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
