@@ -232,11 +232,11 @@
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-patterns",
-                "reference": "3405eca93629b2a1bf616187d015c9b8b212c4d0"
+                "reference": "e015f3df6321c32ef896648980515765b2976fcf"
             },
             "require": {
                 "johnpbloch/wordpress": "^6.0",
@@ -273,7 +273,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-patterns/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-patterns"
             },
-            "time": "2023-02-24T12:01:48+00:00"
+            "time": "2023-05-25T10:53:07+00:00"
         },
         {
             "name": "figuren-theater/ft-options",
@@ -325,20 +325,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "6.1.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "d9ee7d6193781c9ee6288be6ca5681ee0c3f85b8"
+                "reference": "236680349aff347c8bac55665245d3b347d162f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d9ee7d6193781c9ee6288be6ca5681ee0c3f85b8",
-                "reference": "d9ee7d6193781c9ee6288be6ca5681ee0c3f85b8",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/236680349aff347c8bac55665245d3b347d162f0",
+                "reference": "236680349aff347c8bac55665245d3b347d162f0",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "6.1.1",
+                "johnpbloch/wordpress-core": "6.2.2",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -367,20 +367,20 @@
                 "issues": "https://core.trac.wordpress.org/",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2022-11-15T19:12:03+00:00"
+            "time": "2023-05-20T04:40:46+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.1.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "c9688597721b8579f3c29028e572a7b9753db893"
+                "reference": "5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/c9688597721b8579f3c29028e572a7b9753db893",
-                "reference": "c9688597721b8579f3c29028e572a7b9753db893",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18",
+                "reference": "5ed6d4a0469ff42d7ec4a1f72558be8f897a6e18",
                 "shasum": ""
             },
             "require": {
@@ -388,7 +388,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "6.1.1"
+                "wordpress/core-implementation": "6.2.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -415,7 +415,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2022-11-15T19:11:58+00:00"
+            "time": "2023-05-20T04:40:42+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
