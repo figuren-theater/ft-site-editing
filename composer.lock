@@ -791,15 +791,15 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "15.8.1",
+            "version": "16.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/15.8.1"
+                "reference": "tags/16.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.15.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
