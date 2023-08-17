@@ -13,6 +13,7 @@ use function add_action;
 use function is_network_admin;
 use function is_user_admin;
 use function wp_enqueue_block_style;
+use WPMU_PLUGIN_URL;
 
 const BASENAME   = 'superlist-block/superlist-block.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -59,7 +60,7 @@ function enqueue_css_fix() :void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'superlist-block-fix',
-		'src'    => Site_Editing\ASSETS_URL . 'superlist-block/fix.css',
+		'src'    => WPMU_PLUGIN_URL . Site_Editing\ASSETS_URL . 'superlist-block/fix.css',
 	];
 
 	// Add "path" to allow inlining asset if the theme opts-in.

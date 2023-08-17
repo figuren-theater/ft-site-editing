@@ -14,6 +14,7 @@ use FT_VENDOR_DIR;
 use function add_action;
 use function is_network_admin;
 use function is_user_admin;
+use WPMU_PLUGIN_URL;
 
 const BASENAME   = 'embed-block-for-github/embed-block-for-github.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -63,7 +64,7 @@ function enqueue_css_fix() :void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'ebg-repository',
-		'src'    => Site_Editing\ASSETS_URL . 'embed-block-for-github/fix.css',
+		'src'    => WPMU_PLUGIN_URL . Site_Editing\ASSETS_URL . 'embed-block-for-github/fix.css',
 	];
 
 	// Add "path" to allow inlining asset if the theme opts-in.

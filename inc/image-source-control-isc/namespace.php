@@ -25,6 +25,7 @@ use function remove_submenu_page;
 use function wp_installing;
 use ISCVERSION;
 use ISC_Admin;
+use WPMU_PLUGIN_URL;
 use WP_Post;
 
 const BASENAME   = 'image-source-control-isc/isc.php';
@@ -257,7 +258,7 @@ function enqueue_css_fix() :void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'image-source-control-isc-fix',
-		'src'    => Site_Editing\ASSETS_URL . 'image-source-control-isc/fix.css',
+		'src'    => WPMU_PLUGIN_URL . Site_Editing\ASSETS_URL . 'image-source-control-isc/fix.css',
 	];
 
 	// Add "path" to allow inlining asset if the theme opts-in.

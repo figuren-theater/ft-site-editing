@@ -9,7 +9,7 @@ namespace Figuren_Theater\Site_Editing;
 
 use Altis;
 
-const ASSETS_URL = WPMU_PLUGIN_URL . '/FT/ft-site-editing/assets/';
+const ASSETS_URL = '/FT/ft-site-editing/assets/';
 
 /**
  * Register module.
