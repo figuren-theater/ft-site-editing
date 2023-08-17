@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="project_urlname">
-	<description>Coding standards for project_urlname</description>
+<ruleset name="ft-site-editing">
+	<description>Coding standards for ft-site-editing</description>
 
 	<file>.</file>
 
@@ -15,17 +15,19 @@
 	and not running within ft-platform
 	-->
 	<exclude-pattern>*/wp-content/*</exclude-pattern>
+	<exclude-pattern>*/wordpress/*</exclude-pattern>
 
 	<!-- Use figuren.theater Coding Standards -->
 	<rule ref="figurentheater" />
 
-	<!--
+	<!-- Allow to use text-domain strings from required plugins -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
 				<element value="figurentheater"/>
+				<element value="image-source-control-isc"/>
 			</property>
 		</properties>
-	</rule> -->
+	</rule>
 
 </ruleset>

@@ -2,50 +2,63 @@
 /**
  * Figuren_Theater Site_Editing Dinosaur_Game.
  *
- * @package figuren-theater/site_editing/dinosaur_game
+ * @package figuren-theater/ft-site-editing
  */
 
 namespace Figuren_Theater\Site_Editing\Dinosaur_Game;
 
-use FT_VENDOR_DIR;
-
 use Figuren_Theater;
-use function Figuren_Theater\get_config;
 
+use FT_VENDOR_DIR;
 use function add_action;
 use function is_network_admin;
 use function is_user_admin;
 
 const BASENAME   = 'dinosaur-game/dinosaur-game.php';
-const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
+const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
-function bootstrap() {
+function bootstrap() :void {
 
 	add_action( 'init', __NAMESPACE__ . '\\load_plugin', 9 );
 }
 
-function load_plugin() {
+/**
+ * Conditionally load the plugin itself and its modifications.
+ *
+ * @return void
+ */
+function load_plugin() :void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
-	if ( ! $config['dinosaur-game'] )
-		return; // early
+	if ( ! $config['dinosaur-game'] ) {
+		return;
+	}
 
 	// Do only load in "normal" admin view
 	// and for public views
 	// Not for:
 	// - network-admin views
-	// - user-admin views
-	if ( is_network_admin() || is_user_admin() )
+	// - user-admin views.
+	if ( is_network_admin() || is_user_admin() ) {
 		return;
-	
-	require_once PLUGINPATH;
+	}
+
+	require_once FT_VENDOR_DIR . PLUGINPATH; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
 
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\remove_scripts', 0 );
 }
 
-function remove_scripts() {
+/**
+ * Prevent the enqueueing of any dino-related CSS & JS,
+ * if the current request is not resulting in error 404.
+ *
+ * @return void
+ */
+function remove_scripts() :void {
 	is_404() || remove_action( 'wp_enqueue_scripts', 'dinogame_js_css' );
 }

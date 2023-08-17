@@ -2,23 +2,16 @@
 /**
  * Figuren_Theater Site_Editing Image_Source_Control_ISC.
  *
- * @package figuren-theater/site_editing/image_source_control_isc
+ * @package figuren-theater/ft-site-editing
  */
 
 namespace Figuren_Theater\Site_Editing\Image_Source_Control_ISC;
 
-use FT_VENDOR_DIR;
-
 use Figuren_Theater;
-use Figuren_Theater\Site_Editing;
+
 use Figuren_Theater\Options;
-use function Figuren_Theater\get_config;
-
-use ISC_Admin;
-use ISCVERSION;
-
-use WP_POST;
-
+use Figuren_Theater\Site_Editing;
+use FT_VENDOR_DIR;
 use function add_action;
 use function add_filter;
 use function did_action;
@@ -30,76 +23,95 @@ use function is_user_admin;
 use function remove_action;
 use function remove_submenu_page;
 use function wp_installing;
+use ISCVERSION;
+use ISC_Admin;
+use WP_Post;
 
 const BASENAME   = 'image-source-control-isc/isc.php';
-const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
+const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
 const OPTION     = 'isc_options';
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
-function bootstrap() {
+function bootstrap() :void {
 
 	add_action( 'Figuren_Theater\loaded', __NAMESPACE__ . '\\filter_options', 11 );
-	
+
 	add_action( 'plugins_loaded', __NAMESPACE__ . '\\load_plugin' );
 }
 
-function load_plugin() {
+/**
+ * Conditionally load the plugin itself and its modifications.
+ *
+ * @return void
+ */
+function load_plugin() :void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
-	if ( ! $config['image-source-control-isc'] )
-		return; // early
-	
-	if ( is_network_admin() || 
-		 is_user_admin() ||
-		 wp_installing() || 
-		 did_action( 'wp_initialize_site' )
-	)
+	if ( ! $config['image-source-control-isc'] ) {
 		return;
-	
-	require_once PLUGINPATH;
+	}
+
+	if ( is_network_admin() ||
+		is_user_admin() ||
+		wp_installing() ||
+		did_action( 'wp_initialize_site' )
+	) {
+		return;
+	}
+
+	require_once FT_VENDOR_DIR . PLUGINPATH; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
 
 	add_filter( 'pre_option_' . OPTION, __NAMESPACE__ . '\\re_set_dynamic_options', 20 );
 
-	// fake a table-block, to load its styles
+	// Fake a table-block, to load its styles!
 	add_filter( 'do_shortcode_tag', __NAMESPACE__ . '\\load_block_table_styles', 10, 3 );
 
-	if ( ! is_admin() )
+	if ( ! is_admin() ) {
 		return;
+	}
 
 	add_filter( 'attachment_fields_to_edit', __NAMESPACE__ . '\\remove_attachment_fields', 20, 2 );
 
 	add_action( 'admin_notices', __NAMESPACE__ . '\\remove_notices', 0 );
 	add_action( 'admin_menu', __NAMESPACE__ . '\\remove_menu', 11 );
 
-	// remove "Additional Images" from "Sources" Page, 
+	// Remove "Additional Images" from "Sources" Page,
 	// because it was reduced to just a big ad.
 	add_action( 'admin_footer-media_page_isc-sources', __NAMESPACE__ . '\\remove_part_of_sources' );
 }
 
-function filter_options() {
-	
+/**
+ * Handle options
+ *
+ * @return void
+ */
+function filter_options() :void {
+
 	$_options = [
-		'display_type' => [
-			// 0 => 'list',
-		],
+		'display_type'              => [],
 		'list_on_archives'          => false,
 		'list_on_excerpts'          => false,
 		'image_list_headline'       => false,
-		'version'                   => '', // will be re-set after ENABLE // prevents auto-updates of this options-field
+		'version'                   => '', // Will be re-set after ENABLE // prevents auto-updates of this options-field.
 		'thumbnail_in_list'         => false,
 		'thumbnail_size'            => 'thumbnail',
-		'thumbnail_width'           => 150, // will be re-set after ENABLE 
-		'thumbnail_height'          => 150, // will be re-set after ENABLE 
-		// 'warning_onesource_missing' will be changed by Feature 'advanced-isc'
+		'thumbnail_width'           => 150, // Will be re-set after ENABLE.
+		'thumbnail_height'          => 150, // Will be re-set after ENABLE.
+
+		// 'warning_onesource_missing' will be changed by Feature 'advanced-isc'.
 		'warning_onesource_missing' => false,
+
 		'remove_on_uninstall'       => false,
 		'hide_list'                 => false,
 		'caption_position'          => 'bottom-right',
-		'caption_style'             => true, // remove markup and css
-		'source_pretext'            => '', // will be re-set after ENABLE
+		'caption_style'             => true, // Remove markup and CSS.
+		'source_pretext'            => '', // Will be re-set after ENABLE.
 		'enable_licences'           => true,
+
 		// 'licences' will be changed by Feature 'advanced-isc'
 		'licences'                  => 'All Rights Reserved
 		Public Domain Mark 1.0|https://creativecommons.org/publicdomain/mark/1.0/
@@ -110,16 +122,19 @@ function filter_options() {
 		CC BY-NC 4.0 International|https://creativecommons.org/licenses/by-nc/4.0/
 		CC BY-NC-SA 4.0 International|https://creativecommons.org/licenses/by-nc-sa/4.0/
 		CC BY-NC-ND 4.0 International|https://creativecommons.org/licenses/by-nc-nd/4.0/',
+
 		'list_included_images'      => '',
 		'overlay_included_images'   => '',
 		'enable_log'                => false,
 		'standard_source'           => 'custom_text',
-		'standard_source_text'      => '', // will be re-set after ENABLE
+		'standard_source_text'      => '', // Will be re-set after ENABLE.
 
 	];
 
-	// gets added to the 'OptionsCollection' 
-	// from within itself on creation
+	/*
+	 * Gets added to the 'OptionsCollection'
+	 * from within itself on creation.
+	 */
 	new Options\Option(
 		'isc_options',
 		$_options,
@@ -128,35 +143,38 @@ function filter_options() {
 }
 
 /**
- * [re_set_dynamic_options description]
+ * Re-set (the more) dynamic options.
  *
- * @package [package]
- * @since   2.10
- *
- * @param   array|bool      $option [description] could be false on WP_INSTALLING
- * @return  [type]            [description]
+ * @param  array|bool $option [description] could be false on WP_INSTALLING
+ * @return array            [description]
  */
-function re_set_dynamic_options( array|bool $option ) : array {
+function re_set_dynamic_options( array|bool $option ) :array {
 
 	$option = ( is_array( $option ) ) ? $option : [];
 
 	$_blogname = get_option( 'blogname' );
 
-	// $_has_multiple_authors = ( !\Figuren_Theater\FT::site()->has_feature(['einsamer-wolf']) ) ? true : '';
-	// $_permalink_structure = \Figuren_Theater\API::get('Options')->get( 'permalink_structure' );
-
-	// prevents auto-updates of this options-field;
-	$option['version']              = ISCVERSION; 
+	// prevents auto-updates of this options-field.
+	$option['version']              = ISCVERSION;
 	$option['standard_source_text'] = '© ' . $_blogname;
-	// $option['image_list_headline']  = __('Image Sources','image-source-control-isc');
+	// Why is the standard for option 'image_list_headline' disabled ? I dont know ...
+	// $option['image_list_headline']  = __('Image Sources','image-source-control-isc'); // ???
 	$option['source_pretext']       = __( 'Source:', 'image-source-control-isc' );
-	$option['thumbnail_width']      = get_option( 'thumbnail_size_w', 150 ); 
-	$option['thumbnail_height']     = get_option( 'thumbnail_size_h', 150 ); 
-	
+	$option['thumbnail_width']      = get_option( 'thumbnail_size_w', 150 );
+	$option['thumbnail_height']     = get_option( 'thumbnail_size_h', 150 );
+
 	return $option;
 }
 
-function remove_attachment_fields( array $fields, WP_POST $attachment ) : array {
+/**
+ * Filters the attachment fields to edit.
+ *
+ * @param string[] $fields     An array of attachment form fields.
+ * @param WP_Post  $attachment The WP_Post attachment object.
+ *
+ * @return string[]
+ */
+function remove_attachment_fields( array $fields, WP_Post $attachment ) :array {
 	unset( $fields['isc_image_source_pro'] );
 	return $fields;
 }
@@ -165,7 +183,7 @@ function remove_attachment_fields( array $fields, WP_POST $attachment ) : array 
  * Fake a 'table'-block to load its styles.
  *
  * Normally this filters the output created by a shortcode callback.
- * 
+ *
  * @uses    https://developer.wordpress.org/reference/hooks/do_shortcode_tag/
  *
  * @package figuren-theater/site_editing/image_source_control_isc
@@ -173,34 +191,49 @@ function remove_attachment_fields( array $fields, WP_POST $attachment ) : array 
  * @param   string       $output Shortcode output.
  * @param   string       $tag    Shortcode name.
  * @param   string|array $attr   Shortcode attributes array or empty string.
- * 
+ *
  * @return  string               Totally unchanged Shortcode output.
  */
-function load_block_table_styles( string $output, string $tag, array|string $attr ) : string {
-	// make sure it is the right shortcode
-	if ( 'isc_list_all' !== $tag)
+function load_block_table_styles( string $output, string $tag, array|string $attr ) :string {
+	// Make sure it is the right shortcode.
+	if ( 'isc_list_all' !== $tag ) {
 		return $output;
+	}
 
-
-	// this triggers the loading of 'table-block'
-	// related scripts and styles
+	// This triggers the loading of 'table-block's
+	// related scripts and styles.
 	do_blocks( '<!-- wp:table {"className":"is-style-stripes"} --><!-- /wp:table -->' );
 
-	__enqueue_css_fix();
+	enqueue_css_fix();
 
 	return $output;
 }
 
-function remove_notices() : void {
-	// CLEAN UP
+/**
+ * CLEAN UP branded stuff by removing another annoying admin-notice !
+ *
+ * @return void
+ */
+function remove_notices() :void {
 	remove_action( 'admin_notices', [ ISC_Admin::get_instance(), 'branded_admin_header' ] );
 }
 
-function remove_menu() : void {
+/**
+ * Remove the plugins admin-menu.
+ *
+ * @return void
+ */
+function remove_menu() :void {
 	remove_submenu_page( 'options-general.php', 'isc-settings' );
 }
 
-function remove_part_of_sources() {
+/**
+ * Remove "Additional Images" from "Sources" Page,
+ * because it was reduced to just a big ad.
+ *
+ * @return void
+ */
+function remove_part_of_sources() :void {
 
 	?>
 	<script type="text/javascript">
@@ -215,13 +248,17 @@ function remove_part_of_sources() {
 	<?php
 }
 
-
-function __enqueue_css_fix() {
+/**
+ * Enqueue minimal CSS fix
+ *
+ * @return void
+ */
+function enqueue_css_fix() :void {
 	// Same args used for wp_enqueue_style().
-	$args = array(
+	$args = [
 		'handle' => 'image-source-control-isc-fix',
-		'src'    => Site_Editing\ASSETS_URL .'image-source-control-isc/fix.css',
-	);
+		'src'    => Site_Editing\ASSETS_URL . 'image-source-control-isc/fix.css',
+	];
 
 	// Add "path" to allow inlining asset if the theme opts-in.
 	$args['path'] = Site_Editing\DIRECTORY . 'assets/image-source-control-isc/fix.css';
