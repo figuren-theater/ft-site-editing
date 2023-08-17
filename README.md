@@ -21,13 +21,13 @@
   </p>
 </div>
 
-## About 
+## About
 
 
 This is the long desc
 
 * [x] *list closed tracking-issues or `docs` files here*
-* [ ] Do you have any [ideas](/issues/new) ?
+* [ ] Do you have any [ideas](https://github.com/figuren-theater/ft-site-editing/issues/new) ?
 
 ## Background & Motivation
 
@@ -35,20 +35,10 @@ This is the long desc
 
 ## Install
 
-1. Add this repository to your `composer.json`
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url": "https://github.com/figuren-theater/ft-site-editing"
-    }
-]
-```
-
-2. Install via command line
-```sh
-composer require figuren-theater/ft-site-editing
-```
+1. Install via command line
+	```sh
+	composer require figuren-theater/ft-site-editing
+	```
 
 ## Usage
 
@@ -60,7 +50,7 @@ Figuren_Theater::API\get_...()
 
 ## Plugins included
 
-This package contains the following plugins. 
+This package contains the following plugins.
 Thoose are completely managed by code and lack of their typical UI.
 
 * [Abbreviation Button for the Block Editor](https://wordpress.org/plugins/abbreviation-button-for-the-block-editor/#developers)
@@ -85,7 +75,7 @@ Thoose are completely managed by code and lack of their typical UI.
 * [figuren-theater/ft-network-block-patterns](https://github.com/figuren-theater/ft-network-block-patterns)
     Replaces block-patterns taken from themes with customized versions for the figuren.theater WordPress multisite network.
 * [carstingaxion/cbstdsys-post-subtitle](https://github.com/carstingaxion/cbstdsys-post-subtitle)
-    WordPress block to show and style a semantic subtitle. 
+    WordPress block to show and style a semantic subtitle.
 
 
 ### as a --dev dependency
@@ -97,6 +87,8 @@ Thoose are completely managed by code and lack of their typical UI.
 ## Built with & uses
 
   - [dependabot](/.github/dependabot.yml)
+  - [code-quality](https://github.com/figuren-theater/code-quality/)
+     A set of status checks to ensure high and consitent code-quality for the figuren.theater platform.
   - ....
 
 ## Contributing
@@ -116,18 +108,18 @@ Don't forget to give the project a star! Thanks again!
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this repository](/tags).
+available, see the [tags on this repository](https://github.com/figuren-theater/ft-site-editing/tags).
 
 ## Authors
 
   - **Carsten Bach** - *Provided idea & code* - [figuren.theater/crew](https://figuren.theater/crew/)
 
-See also the list of [contributors](/contributors)
+See also the list of [contributors](https://github.com/figuren-theater/ft-site-editing/contributors)
 who participated in this project.
 
 ## License
 
-This project is licensed under the [GPL-3.0-or-later](LICENSE.md), see the [LICENSE](LICENSE) file for
+This project is licensed under the **GPL-3.0-or-later**, see the [LICENSE](/LICENSE) file for
 details
 
 ## Acknowledgments
