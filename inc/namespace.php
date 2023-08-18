@@ -2,37 +2,36 @@
 /**
  * Figuren_Theater Site_Editing.
  *
- * @package figuren-theater/site_editing
+ * @package figuren-theater/ft-site-editing
  */
 
 namespace Figuren_Theater\Site_Editing;
 
 use Altis;
-use function Altis\register_module;
 
-
-const ASSETS_URL = WPMU_PLUGIN_URL . '/FT/ft-site-editing/assets/';
-
+const ASSETS_URL = '/FT/ft-site-editing/assets/';
 
 /**
  * Register module.
+ *
+ * @return void
  */
-function register() {
+function register() :void {
 
 	$default_settings = [
-		'enabled'                  => true, // needs to be set
+		'enabled'                  => true, // Needs to be set.
 		'block-catalog'            => false,
 		'block-visibility'         => false,
-		'copyright-block'          => true, // needed by ft-network-block-patterns
+		'copyright-block'          => true, // Needed by ft-network-block-patterns !
 		'dinosaur-game'            => false,
 		'embed-block-for-github'   => false,
 		'gallery-block-lightbox'   => true,
-		'image-source-control-isc' => false, // used by 
+		'image-source-control-isc' => false,
 		'markdown-comment-block'   => false,
-		'newspaper-columns'        => true, // needed by ft-network-block-patterns
-		'superlist-block'          => true, // needed by ft-network-block-patterns + Impressum
-		'social-sharing-block'     => true, // needed by ft-network-block-patterns
-		'todo-block'               => true, // needed by ft-network-block-patterns
+		'newspaper-columns'        => true, // Needed by ft-network-block-patterns !
+		'superlist-block'          => true, // Needed by ft-network-block-patterns + Impressum !
+		'social-sharing-block'     => true, // Needed by ft-network-block-patterns !
+		'todo-block'               => true, // Needed by ft-network-block-patterns !
 	];
 	$options = [
 		'defaults' => $default_settings,
@@ -49,17 +48,22 @@ function register() {
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
-function bootstrap() {
+function bootstrap() :void {
 
-	// Plugins
+	// Plugins.
 	Abbreviation_Button_For_The_Block_Editor\bootstrap();
-#	Block_Catalog\bootstrap(); // keep disabled, for now ;)
+	// keep the plugin disabled, for now - as its more helpful for migrations, than day2day ;) !
+	// Block_Catalog\bootstrap(); // !
 	Block_Visibility\bootstrap();
 	Cbstdsys_Post_Subtitle\bootstrap();
 	Copyright_Block\bootstrap();
 	Dinosaur_Game\bootstrap();
 	Embed_Block_For_Github\bootstrap();
+	FT_Network_Block_Editor\bootstrap();
+	FT_Network_Block_Patterns\bootstrap();
 	Gallery_Block_Lightbox\bootstrap();
 	Icon_Block\bootstrap();
 	Image_Source_Control_ISC\bootstrap();
@@ -68,12 +72,5 @@ function bootstrap() {
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
 	Superlist_Block\bootstrap();
-	Todo_Block\bootstrap(); // JS annoying console.log // https://github.com/figuren-theater/ft-site-editing/issues/15
-
-	// f.t
-	FT_Network_Block_Editor\bootstrap();
-	FT_Network_Block_Patterns\bootstrap();
-	
-	// Best practices
-	//...\bootstrap();
+	Todo_Block\bootstrap();
 }

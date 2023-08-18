@@ -2,7 +2,7 @@
 /**
  * Figuren_Theater Site_Editing Social_Sharing_Block.
  *
- * @package figuren-theater/site_editing/social_sharing_block
+ * @package figuren-theater/ft-site-editing
  */
 
 namespace Figuren_Theater\Site_Editing\Social_Sharing_Block;
@@ -14,25 +14,33 @@ use function is_network_admin;
 use function is_user_admin;
 
 const BASENAME   = 'social-sharing-block/social-sharing-block.php';
-const PLUGINPATH = FT_VENDOR_DIR . '/wpackagist-plugin/' . BASENAME;
+const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
-function bootstrap() {
+function bootstrap() :void {
 
 	add_action( 'init', __NAMESPACE__ . '\\load_plugin', 9 );
 }
 
-function load_plugin() {
+/**
+ * Conditionally load the plugin itself and its modifications.
+ *
+ * @return void
+ */
+function load_plugin() :void {
 
 	// Do only load in "normal" admin view
 	// and for public views
 	// Not for:
 	// - network-admin views
-	// - user-admin views
-	if ( is_network_admin() || is_user_admin() )
+	// - user-admin views.
+	if ( is_network_admin() || is_user_admin() ) {
 		return;
-	
-	require_once PLUGINPATH;
+	}
+
+	require_once FT_VENDOR_DIR . PLUGINPATH; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
 }

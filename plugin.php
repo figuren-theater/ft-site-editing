@@ -1,8 +1,8 @@
 <?php
 /**
- * ft-site-editing
+ * Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.
  *
- * @package           figuren-theater/site-editing
+ * @package           figuren-theater/ft-site-editing
  * @author            figuren.theater
  * @copyright         2023 figuren.theater
  * @license           GPL-3.0-or-later
