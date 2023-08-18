@@ -62,7 +62,7 @@ function load_plugin() :void {
  * @param array<string, mixed> $args       Normal block.json arguments.
  * @param string               $block_type Slug of the block being filtered.
  *
- * @return array
+ * @return array<string, mixed>
  */
 function modify_block_args( array $args, string $block_type ) :array {
 

@@ -11,6 +11,7 @@ use Figuren_Theater;
 
 use FT_VENDOR_DIR;
 use function add_action;
+use function add_filter;
 use function register_block_style;
 use function wp_unique_id;
 
@@ -43,17 +44,17 @@ function load_plugin() :void {
 
 	add_action( 'init', __NAMESPACE__ . '\\rbs' );
 
-	add_action( 'todolists_add_checkbox', __NAMESPACE__ . '\\a11y_todo_items', 10, 3 );
+	add_filter( 'todolists_add_checkbox', __NAMESPACE__ . '\\a11y_todo_items', 10, 3 );
 }
 
 /**
  * Register a custom block style for the 'todo list' block.
  *
- * The new style will be the new default and have a slightly bigger checkmark.
+ * The new style will be the new default and has a slightly bigger checkmark.
  *
  * @return void
  */
-function rbs() : void {
+function rbs() :void {
 
 	if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(

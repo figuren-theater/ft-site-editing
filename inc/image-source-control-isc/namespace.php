@@ -146,8 +146,9 @@ function filter_options() :void {
 /**
  * Re-set (the more) dynamic options.
  *
- * @param  array|bool $option [description] could be false on WP_INSTALLING
- * @return array            [description]
+ * @param  array<string, mixed>|bool $option ISC-Option if already saved, can be false on WP_INSTALLING.
+ *
+ * @return array<string, mixed>
  */
 function re_set_dynamic_options( array|bool $option ) :array {
 
@@ -189,13 +190,13 @@ function remove_attachment_fields( array $fields, WP_Post $attachment ) :array {
  *
  * @package figuren-theater/site_editing/image_source_control_isc
  *
- * @param   string       $output Shortcode output.
- * @param   string       $tag    Shortcode name.
- * @param   string|array $attr   Shortcode attributes array or empty string.
+ * @param   string          $output Shortcode output.
+ * @param   string          $tag    Shortcode name.
+ * @param   string|string[] $attr   Shortcode attributes array or empty string.
  *
- * @return  string               Totally unchanged Shortcode output.
+ * @return  string                  Totally unchanged Shortcode output.
  */
-function load_block_table_styles( string $output, string $tag, array|string $attr ) :string {
+function load_block_table_styles( string $output, string $tag, string|array $attr ) :string {
 	// Make sure it is the right shortcode.
 	if ( 'isc_list_all' !== $tag ) {
 		return $output;
