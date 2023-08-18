@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7105458b6d774029879001b41b103423",
+    "content-hash": "624feaead0e396eb5dfe551460a16adc",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -735,15 +735,15 @@
         },
         {
             "name": "wpackagist-plugin/social-sharing-block",
-            "version": "0.6.0",
+            "version": "0.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-sharing-block/",
-                "reference": "tags/0.6.0"
+                "reference": "tags/0.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social-sharing-block.0.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/social-sharing-block.0.9.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
