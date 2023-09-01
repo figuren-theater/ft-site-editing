@@ -41,8 +41,8 @@
         "wpackagist-plugin/copyright-block": "^0.1",
         "wpackagist-plugin/dinosaur-game": "^1.0",
         "wpackagist-plugin/embed-block-for-github": "^0.3",
-        "wpackagist-plugin/gallery-block-lightbox": "^1.12",
-        "wpackagist-plugin/icon-block": "^1.4",
+        "wpackagist-plugin/gallery-block-lightbox": "^1.13",
+        "wpackagist-plugin/icon-block": "^1.5",
         "wpackagist-plugin/image-source-control-isc": "^2",
         "wpackagist-plugin/lang-attribute": "^0.3",
         "wpackagist-plugin/markdown-comment-block": "^0.1",
@@ -52,8 +52,8 @@
         "wpackagist-plugin/todo-block": "^1.0"
     },
     "require-dev": {
-        "figuren-theater/code-quality": "^0.6.6",
-        "wpackagist-plugin/gutenberg": ">=15.2"
+        "figuren-theater/code-quality": "*",
+        "wpackagist-plugin/gutenberg": ">=16.4"
     },
     "repositories": [
         {
