@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.3.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.3.1...HEAD)
+
+## [1.3.1](https://github.com/figuren-theater/ft-site-editing/compare/1.3.0...1.3.1) - 2023-09-01
+
+### 🐛 Fixed
+
+- Avoid 'too early' error when using after_setup_theme for JS & CSS ([#56](https://github.com/figuren-theater/ft-site-editing/pull/56))
 
 ## [1.3.0](https://github.com/figuren-theater/ft-site-editing/compare/1.2.2...1.3.0) - 2023-08-18
 
