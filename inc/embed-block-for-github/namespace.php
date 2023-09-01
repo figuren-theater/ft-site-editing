@@ -52,7 +52,7 @@ function load_plugin() :void {
 
 	require_once FT_VENDOR_DIR . PLUGINPATH; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
 
-	add_action( 'after_setup_theme', __NAMESPACE__ . '\\enqueue_css_fix' );
+	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_css_fix' );
 }
 
 /**

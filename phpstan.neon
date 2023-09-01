@@ -8,6 +8,8 @@ parameters:
         - plugin.php
     excludePaths:
         analyseAndScan:
+            # Prevent phpstan from multiple definitions of the same things,
+			# because we already use phpstan/wordpress-stubs
             - wordpress/
         analyse:
             - vendor/
