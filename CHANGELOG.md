@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.3.1...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.0...HEAD)
+
+## [1.4.0](https://github.com/figuren-theater/ft-site-editing/compare/1.3.1...1.4.0) - 2023-09-01
+
+- Update dependencies ([#57](https://github.com/figuren-theater/ft-site-editing/pull/57))
 
 ## [1.3.1](https://github.com/figuren-theater/ft-site-editing/compare/1.3.0...1.3.1) - 2023-09-01
 
