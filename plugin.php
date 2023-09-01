@@ -11,7 +11,7 @@
  * Plugin Name:       figuren.theater | Site Editing
  * Plugin URI:        https://github.com/figuren-theater/ft-site-editing
  * Description:       Packages to improve or extend the editing experience within the WordPress Site Editor (called Gutenberg for a long time) for all sites of the figuren.theater multisite network.
- * Version:           1.3.1
+ * Version:           1.4.0
  * Requires at least: 6.0
  * Requires PHP:      7.2
  * Author:            figuren.theater
