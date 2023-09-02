@@ -1359,16 +1359,16 @@
         },
         {
             "name": "figuren-theater/code-quality",
-            "version": "0.6.7",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/code-quality.git",
-                "reference": "f4bd68b3e579543d09fa9d1435d758501731fcb1"
+                "reference": "c783c4f792e4f448101d50cb19b97edcf52d310d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/figuren-theater/code-quality/zipball/f4bd68b3e579543d09fa9d1435d758501731fcb1",
-                "reference": "f4bd68b3e579543d09fa9d1435d758501731fcb1",
+                "url": "https://api.github.com/repos/figuren-theater/code-quality/zipball/c783c4f792e4f448101d50cb19b97edcf52d310d",
+                "reference": "c783c4f792e4f448101d50cb19b97edcf52d310d",
                 "shasum": ""
             },
             "require": {
@@ -1408,7 +1408,7 @@
                 "issues": "https://github.com/figuren-theater/code-quality/issues",
                 "source": "https://github.com/figuren-theater/code-quality"
             },
-            "time": "2023-08-25T09:10:34+00:00"
+            "time": "2023-09-01T23:53:33+00:00"
         },
         {
             "name": "figuren-theater/coding-standards",
