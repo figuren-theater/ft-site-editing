@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.1...HEAD)
+
+## [1.4.1](https://github.com/figuren-theater/ft-site-editing/compare/1.4.0...1.4.1) - 2023-09-02
+
+### Dependency Updates & Maintenance
+
+- Upgrading figuren-theater/code-quality (0.6.7 => 0.7.0) ([#58](https://github.com/figuren-theater/ft-site-editing/pull/58))
 
 ## [1.4.0](https://github.com/figuren-theater/ft-site-editing/compare/1.3.1...1.4.0) - 2023-09-01
 
