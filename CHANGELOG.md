@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.1...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.2...HEAD)
+
+## [1.4.2](https://github.com/figuren-theater/ft-site-editing/compare/1.4.1...1.4.2) - 2023-09-11
+
+### 🐛 Fixed
+
+- Update (to fixed) ft-network-block-patterns & ft-options ([#60](https://github.com/figuren-theater/ft-site-editing/pull/60))
 
 ## [1.4.1](https://github.com/figuren-theater/ft-site-editing/compare/1.4.0...1.4.1) - 2023-09-02
 
