@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a04127973f85f0e8e80f7aa8046a0011",
+    "content-hash": "290dfb2619cad85296998a657bed72e4",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -232,11 +232,11 @@
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-patterns",
-                "reference": "e015f3df6321c32ef896648980515765b2976fcf"
+                "reference": "11e012b73d5b89d2904ef85201d8cc2f89d4135e"
             },
             "require": {
                 "johnpbloch/wordpress": "^6.0",
@@ -273,26 +273,36 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-patterns/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-patterns"
             },
-            "time": "2023-05-25T10:53:07+00:00"
+            "time": "2023-09-11T10:50:48+00:00"
         },
         {
             "name": "figuren-theater/ft-options",
-            "version": "1.1.11",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/figuren-theater/ft-options",
-                "reference": "7764df6116733212baa363483053728d38d3bf28"
+                "url": "https://github.com/figuren-theater/ft-options.git",
+                "reference": "127e6c8bb62cce778ee7468aa548c8326fe9c29a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/figuren-theater/ft-options/zipball/127e6c8bb62cce778ee7468aa548c8326fe9c29a",
+                "reference": "127e6c8bb62cce778ee7468aa548c8326fe9c29a",
+                "shasum": ""
             },
             "require": {
                 "markjaquith/wp-tlc-transients": "^1.0",
-                "php": ">=7.1"
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "figuren-theater/code-quality": "*"
             },
             "type": "wordpress-muplugin",
             "autoload": {
-                "psr-4": {
-                    "Figuren_Theater\\Options\\": "inc/"
-                }
+                "classmap": [
+                    "inc/"
+                ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -311,9 +321,9 @@
             "description": "Options management via code for a WordPress multisite like figuren.theater",
             "homepage": "https://websites.fuer.figuren.theater",
             "keywords": [
+                "Settings",
                 "multisite",
                 "options",
-                "settings",
                 "wordpress"
             ],
             "support": {
@@ -321,7 +331,7 @@
                 "issues": "https://github.com/figuren-theater/ft-options/issues",
                 "source": "https://github.com/figuren-theater/ft-options"
             },
-            "time": "2023-07-06T21:36:17+00:00"
+            "time": "2023-09-11T10:27:33+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
