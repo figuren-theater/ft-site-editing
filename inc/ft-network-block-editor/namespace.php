@@ -13,7 +13,7 @@ use function add_action;
 use function is_network_admin;
 use function is_user_admin;
 
-const BASENAME   = 'ft-network-block-editor/ft-network-block-editor.php';
+const BASENAME   = 'ft-network-block-editor/plugin.php';
 const PLUGINPATH = '/figuren-theater/' . BASENAME;
 
 /**
