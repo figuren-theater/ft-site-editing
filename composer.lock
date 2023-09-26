@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "290dfb2619cad85296998a657bed72e4",
+    "content-hash": "70efd7237eedffa11feee09537e8c824",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -192,16 +192,33 @@
         },
         {
             "name": "figuren-theater/ft-network-block-editor",
-            "version": "0.4.0",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/figuren-theater/ft-network-block-editor",
-                "reference": "efbf9b5f4dd545efc42e551e4583d5554e3d1169"
+                "url": "https://github.com/figuren-theater/ft-network-block-editor.git",
+                "reference": "6d2328cd43fb24d489e5c8a5b414d01f26cfb376"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/figuren-theater/ft-network-block-editor/zipball/6d2328cd43fb24d489e5c8a5b414d01f26cfb376",
+                "reference": "6d2328cd43fb24d489e5c8a5b414d01f26cfb376",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
             },
+            "require-dev": {
+                "figuren-theater/code-quality": "*"
+            },
             "type": "wordpress-plugin",
+            "autoload": {
+                "files": [
+                    "inc/archive-title/namespace.php",
+                    "inc/editor-assets/namespace.php",
+                    "inc/namespace.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -228,7 +245,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-editor/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-editor"
             },
-            "time": "2023-02-18T17:48:04+00:00"
+            "time": "2023-09-26T21:19:48+00:00"
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
