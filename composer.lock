@@ -582,15 +582,15 @@
         },
         {
             "name": "wpackagist-plugin/block-visibility",
-            "version": "3.0.4",
+            "version": "3.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-visibility/",
-                "reference": "tags/3.0.4"
+                "reference": "tags/3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.0.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.1.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
