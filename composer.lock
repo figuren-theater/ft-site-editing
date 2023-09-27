@@ -690,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/image-source-control-isc",
-            "version": "2.14.2",
+            "version": "2.16.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/image-source-control-isc/",
-                "reference": "tags/2.14.2"
+                "reference": "tags/2.16.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.14.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.16.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
