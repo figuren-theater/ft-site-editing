@@ -2,7 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.4.2...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.5.0...HEAD)
+
+## [1.5.0](https://github.com/figuren-theater/ft-site-editing/compare/1.4.2...1.5.0) - 2023-09-27
+
+### Dependency Updates & Maintenance
+
+- Update renamed main pluginfile of f.t/ft-network-block-editor ([#63](https://github.com/figuren-theater/ft-site-editing/pull/63))
+- Bump wpackagist-plugin/gutenberg from 16.5.1 to 16.6.0 ([#61](https://github.com/figuren-theater/ft-site-editing/pull/61))
+- Bump wpackagist-plugin/block-visibility from 3.0.4 to 3.1.1 ([#64](https://github.com/figuren-theater/ft-site-editing/pull/64))
+- Bump figuren-theater/code-quality from 0.7.0 to 0.8.1 ([#65](https://github.com/figuren-theater/ft-site-editing/pull/65))
 
 ## [1.4.2](https://github.com/figuren-theater/ft-site-editing/compare/1.4.1...1.4.2) - 2023-09-11
 
