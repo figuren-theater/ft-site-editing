@@ -564,15 +564,15 @@
         },
         {
             "name": "wpackagist-plugin/block-catalog",
-            "version": "1.5.0",
+            "version": "1.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-catalog/",
-                "reference": "tags/1.5.0"
+                "reference": "tags/1.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-catalog.1.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-catalog.1.5.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2226,5 +2226,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
