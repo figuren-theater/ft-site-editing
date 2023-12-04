@@ -2200,15 +2200,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "16.6.0",
+            "version": "17.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/16.6.0"
+                "reference": "tags/17.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.1.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2226,5 +2226,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
