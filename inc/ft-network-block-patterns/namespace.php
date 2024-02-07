@@ -5,7 +5,7 @@
  * @package figuren-theater/ft-site-editing
  */
 
-namespace Figuren_Theater\Site_Editing\FT_Network_Block_Patterns;
+namespace Figuren_Theater\Site_Editing\Network_Block_Patterns;
 
 use FT_VENDOR_DIR;
 
@@ -13,7 +13,7 @@ use function add_action;
 use function is_network_admin;
 use function is_user_admin;
 
-const BASENAME   = 'ft-network-block-patterns/ft-network-block-patterns.php';
+const BASENAME   = 'ft-network-block-patterns/plugin.php';
 const PLUGINPATH = '/figuren-theater/' . BASENAME;
 
 /**
@@ -31,7 +31,7 @@ function bootstrap() {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	// Do only load in "normal" admin view
 	// Not for:
