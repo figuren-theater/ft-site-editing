@@ -33,7 +33,7 @@
         "php": ">=7.2",
         "carstingaxion/cbstdsys-post-subtitle": "0.1.1",
         "figuren-theater/ft-network-block-editor": "*",
-        "figuren-theater/ft-network-block-patterns": "^1.0",
+        "figuren-theater/ft-network-block-patterns": "*",
         "figuren-theater/ft-options": "^1.1",
         "wpackagist-plugin/abbreviation-button-for-the-block-editor": "^0.1",
         "wpackagist-plugin/block-catalog": "^1.4",
@@ -56,10 +56,6 @@
         "wpackagist-plugin/gutenberg": ">=16.4"
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/figuren-theater/ft-network-block-patterns"
-        },
         {
             "type": "git",
             "url": "https://github.com/carstingaxion/cbstdsys-post-subtitle"
@@ -98,10 +94,10 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "johnpbloch/wordpress-core-installer": true,
-            "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "ergebnis/composer-normalize": true
+            "ergebnis/composer-normalize": true,
+            "johnpbloch/wordpress-core-installer": true,
+            "phpstan/extension-installer": true
         }
     },
     "extra": {

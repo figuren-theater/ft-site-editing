@@ -8,4 +8,4 @@
 /**
  * Pseudo (or fake) class to prevent ISC from loading all its pro-marketing stuff.
  */
-class ISC_Pro_Admin{} // phpcs:ignore PSR1.Classes.ClassDeclaration.MissingNamespace
+class ISC_Pro_Admin{} // phpcs:ignore PSR1.Classes.ClassDeclaration.MissingNamespace, WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound

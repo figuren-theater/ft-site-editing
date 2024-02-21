@@ -21,7 +21,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'plugins_loaded', __NAMESPACE__ . '\\load_plugin' );
 }
@@ -31,7 +31,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['gallery-block-lightbox'] ) {
@@ -58,11 +58,9 @@ function load_plugin() :void {
  * @version version
  * @author  Carsten Bach
  *
- * @param   bool  $should_load_scripts  Whether baguettebox assets have to be enqueued.
- *
  * @return  bool                            [description]
  */
-function enqueue_assets( bool $should_load_scripts ) :bool {
+function enqueue_assets(): bool {
 	return (
 		\has_block( 'core/gallery' ) ||
 		\has_block( 'core/image' ) ||
@@ -115,4 +113,3 @@ function filter( string $reg_exp ) : string {
 	// this is the plugin default
 	// return '/.+\.(gif|jpe?g|png|webp|svg|avif|heif|heic|tif?f|)($|\?)/i';
 } */
-

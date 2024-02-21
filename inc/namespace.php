@@ -16,7 +16,7 @@ const ASSETS_URL = '/FT/ft-site-editing/assets/';
  *
  * @return void
  */
-function register() :void {
+function register(): void {
 
 	$default_settings = [
 		'enabled'                  => true, // Needs to be set.
@@ -33,7 +33,7 @@ function register() :void {
 		'social-sharing-block'     => true, // Needed by ft-network-block-patterns !
 		'todo-block'               => true, // Needed by ft-network-block-patterns !
 	];
-	$options = [
+	$options          = [
 		'defaults' => $default_settings,
 	];
 
@@ -51,7 +51,7 @@ function register() :void {
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	// Plugins.
 	Abbreviation_Button_For_The_Block_Editor\bootstrap();

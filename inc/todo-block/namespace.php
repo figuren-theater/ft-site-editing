@@ -23,7 +23,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'plugins_loaded', __NAMESPACE__ . '\\load_plugin' );
 }
@@ -33,7 +33,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['todo-block'] ) {
@@ -44,7 +44,7 @@ function load_plugin() :void {
 
 	add_action( 'init', __NAMESPACE__ . '\\rbs' );
 
-	add_filter( 'todolists_add_checkbox', __NAMESPACE__ . '\\a11y_todo_items', 10, 3 );
+	add_filter( 'todolists_add_checkbox', __NAMESPACE__ . '\\a11y_todo_items', 10 );
 }
 
 /**
@@ -54,7 +54,7 @@ function load_plugin() :void {
  *
  * @return void
  */
-function rbs() :void {
+function rbs(): void {
 
 	if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
@@ -74,13 +74,11 @@ function rbs() :void {
  *
  * @todo #55 Suggest a solution to 'Connect form fields with labels' to the plugin-author
  *
- * @param string $content       Rendered HTML content of a single todo-list item
- * @param string $block_content Full rendered block
- * @param boolean $checked      Is the list item checked or not?
+ * @param string $content       Rendered HTML content of a single todo-list item.
  *
- * @return string               Modified HTML content of a single todo-list item
+ * @return string                Modified HTML content of a single todo-list item
  */
-function a11y_todo_items( string $content, string $block_content, bool $checked ) :string {
+function a11y_todo_items( string $content ): string {
 
 	$_prefix = 'ft_todo_';
 
@@ -110,4 +108,3 @@ function a11y_todo_items( string $content, string $block_content, bool $checked 
 
 	return $content;
 }
-

@@ -8,13 +8,11 @@
 namespace Figuren_Theater\Site_Editing\Newspaper_Columns;
 
 use Figuren_Theater\Site_Editing;
-
 use FT_VENDOR_DIR;
-
+use WPMU_PLUGIN_URL;
 use function add_action;
 use function is_network_admin;
 use function is_user_admin;
-use WPMU_PLUGIN_URL;
 
 const BASENAME   = 'newspaper-columns/newspaper-columns.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -24,7 +22,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	// Even the Plugin normally starts up at 'init:10',
 	// we want to hook into 'after_setup_theme' which runs before 'init'.
@@ -36,7 +34,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	// Do only load in "normal" admin view
 	// and for public views
@@ -57,7 +55,7 @@ function load_plugin() :void {
  *
  * @return void
  */
-function enqueue_css_fix() :void {
+function enqueue_css_fix(): void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'newspaper-columns-fix',
