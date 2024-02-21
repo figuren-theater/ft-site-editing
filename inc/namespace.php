@@ -25,7 +25,6 @@ function register(): void {
 		'copyright-block'          => true, // Needed by ft-network-block-patterns !
 		'dinosaur-game'            => false,
 		'embed-block-for-github'   => false,
-		'gallery-block-lightbox'   => true,
 		'image-source-control-isc' => false,
 		'markdown-comment-block'   => false,
 		'newspaper-columns'        => true, // Needed by ft-network-block-patterns !
@@ -64,7 +63,6 @@ function bootstrap(): void {
 	Embed_Block_For_Github\bootstrap();
 	FT_Network_Block_Editor\bootstrap();
 	FT_Network_Block_Patterns\bootstrap();
-	Gallery_Block_Lightbox\bootstrap();
 	Icon_Block\bootstrap();
 	Image_Source_Control_ISC\bootstrap();
 	Lang_Attribute\bootstrap();

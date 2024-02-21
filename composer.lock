@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e92de9e9cb758f0aa36f5f0f1ac574ae",
+    "content-hash": "1169eebcc3b169a3c542908c5e38c9a4",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -658,24 +658,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/embed-block-for-github/"
-        },
-        {
-            "name": "wpackagist-plugin/gallery-block-lightbox",
-            "version": "1.13",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/gallery-block-lightbox/",
-                "reference": "tags/1.13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gallery-block-lightbox.1.13.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/gallery-block-lightbox/"
         },
         {
             "name": "wpackagist-plugin/icon-block",

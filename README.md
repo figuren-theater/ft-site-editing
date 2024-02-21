@@ -63,7 +63,6 @@ Thoose are completely managed by code and lack of their typical UI.
 * [Icon Block](https://wordpress.org/plugins/icon-block/#developers)
 * [Image Source Control](https://wordpress.org/plugins/image-source-control-isc/#developers)
 * [Lang Attribute for the Block Editor](https://wordpress.org/plugins/lang-attribute/#developers)
-* [Lightbox for Gallery & Image Block](https://wordpress.org/plugins/gallery-block-lightbox/#developers)
 * [Markdown Comment Block](https://wordpress.org/plugins/markdown-comment-block/#developers)
 * [Newspaper Columns](https://wordpress.org/plugins/newspaper-columns/#developers)
 * [Social Sharing Block](https://wordpress.org/plugins/social-sharing-block/#developers)
