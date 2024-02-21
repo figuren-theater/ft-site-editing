@@ -65,7 +65,6 @@ function bootstrap(): void {
 	FT_Network_Block_Patterns\bootstrap();
 	Icon_Block\bootstrap();
 	Image_Source_Control_ISC\bootstrap();
-	Lang_Attribute\bootstrap();
 	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
