@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e92de9e9cb758f0aa36f5f0f1ac574ae",
+    "content-hash": "ebb2c788bb6959a1ef28d399d2ec31f7",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -660,24 +660,6 @@
             "homepage": "https://wordpress.org/plugins/embed-block-for-github/"
         },
         {
-            "name": "wpackagist-plugin/gallery-block-lightbox",
-            "version": "1.13",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/gallery-block-lightbox/",
-                "reference": "tags/1.13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gallery-block-lightbox.1.13.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/gallery-block-lightbox/"
-        },
-        {
             "name": "wpackagist-plugin/icon-block",
             "version": "1.6.0",
             "source": {
@@ -954,7 +936,6 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-
             "version": "2.42.0",
             "source": {
                 "type": "git",
@@ -996,7 +977,8 @@
                 "composer-normalize": {
                     "indent-size": 2,
                     "indent-style": "space"
-                }
+                },
+                "plugin-optional": true
             },
             "autoload": {
                 "psr-4": {
@@ -1024,6 +1006,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ergebnis/composer-normalize/issues",
+                "security": "https://github.com/ergebnis/composer-normalize/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/composer-normalize"
             },
             "time": "2024-01-30T11:54:02+00:00"
@@ -1131,7 +1114,6 @@
             },
             "suggest": {
                 "composer/semver": "If you want to use ComposerJsonNormalizer or VersionConstraintNormalizer"
-
             },
             "type": "library",
             "autoload": {
@@ -1454,6 +1436,7 @@
             "description": "Coding standards for PHP, JavaScript and CSS within the figuren.theater WordPress Multisite network.",
             "homepage": "https://websites.fuer.figuren.theater",
             "keywords": [
+                "WordPressVIPMinimum",
                 "coding-standards",
                 "wordpress",
                 "wpcs"
@@ -1485,9 +1468,6 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "2.42.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.31"
             },
             "type": "phpstan-extension",
             "extra": {
