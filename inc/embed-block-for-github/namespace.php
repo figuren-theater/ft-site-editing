@@ -9,12 +9,11 @@ namespace Figuren_Theater\Site_Editing\Embed_Block_For_Github;
 
 use Figuren_Theater;
 use Figuren_Theater\Site_Editing;
-
 use FT_VENDOR_DIR;
+use WPMU_PLUGIN_URL;
 use function add_action;
 use function is_network_admin;
 use function is_user_admin;
-use WPMU_PLUGIN_URL;
 
 const BASENAME   = 'embed-block-for-github/embed-block-for-github.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -24,7 +23,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'init', __NAMESPACE__ . '\\load_plugin', 9 );
 }
@@ -34,7 +33,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['embed-block-for-github'] ) {
@@ -60,7 +59,7 @@ function load_plugin() :void {
  *
  * @return void
  */
-function enqueue_css_fix() :void {
+function enqueue_css_fix(): void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'ebg-repository',
@@ -73,4 +72,3 @@ function enqueue_css_fix() :void {
 	// Enqueue asset.
 	wp_enqueue_block_style( 'embed-block-for-github/repository', $args );
 }
-

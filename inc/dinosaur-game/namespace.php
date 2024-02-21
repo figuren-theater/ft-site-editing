@@ -22,7 +22,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'init', __NAMESPACE__ . '\\load_plugin', 9 );
 }
@@ -32,7 +32,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['dinosaur-game'] ) {
@@ -59,6 +59,6 @@ function load_plugin() :void {
  *
  * @return void
  */
-function remove_scripts() :void {
+function remove_scripts(): void {
 	is_404() || remove_action( 'wp_enqueue_scripts', 'dinogame_js_css' );
 }

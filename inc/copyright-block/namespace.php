@@ -25,7 +25,7 @@ const BLOCKTYPE = 'mkaz/copyright-block';
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'init', __NAMESPACE__ . '\\load_plugin', 9 );
 }
@@ -35,7 +35,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['copyright-block'] ) {
@@ -64,7 +64,7 @@ function load_plugin() :void {
  *
  * @return array<string, mixed>
  */
-function modify_block_args( array $args, string $block_type ) :array {
+function modify_block_args( array $args, string $block_type ): array {
 
 	if ( BLOCKTYPE !== $block_type ) {
 		return $args;
@@ -79,7 +79,7 @@ function modify_block_args( array $args, string $block_type ) :array {
  *
  * @return string
  */
-function modify_block_output() :string {
-	$year = date( 'Y' );
+function modify_block_output(): string {
+	$year = gmdate( 'Y' );
 	return '© ' . $year;
 }

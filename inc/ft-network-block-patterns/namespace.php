@@ -5,7 +5,7 @@
  * @package figuren-theater/ft-site-editing
  */
 
-namespace Figuren_Theater\Site_Editing\Network_Block_Patterns;
+namespace Figuren_Theater\Site_Editing\FT_Network_Block_Patterns;
 
 use FT_VENDOR_DIR;
 

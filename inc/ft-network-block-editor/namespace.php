@@ -31,7 +31,7 @@ function bootstrap() {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	// Do only load in "normal" admin view
 	// Not for:

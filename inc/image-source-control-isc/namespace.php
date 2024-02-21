@@ -12,6 +12,10 @@ use Figuren_Theater;
 use Figuren_Theater\Options;
 use Figuren_Theater\Site_Editing;
 use FT_VENDOR_DIR;
+use ISCVERSION;
+use ISC_Admin;
+use WPMU_PLUGIN_URL;
+use WP_Post;
 use function add_action;
 use function add_filter;
 use function did_action;
@@ -23,10 +27,6 @@ use function is_user_admin;
 use function remove_action;
 use function remove_submenu_page;
 use function wp_installing;
-use ISCVERSION;
-use ISC_Admin;
-use WPMU_PLUGIN_URL;
-use WP_Post;
 
 const BASENAME   = 'image-source-control-isc/isc.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -37,7 +37,7 @@ const OPTION     = 'isc_options';
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'Figuren_Theater\loaded', __NAMESPACE__ . '\\filter_options', 11 );
 
@@ -49,7 +49,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	$config = Figuren_Theater\get_config()['modules']['site_editing'];
 	if ( ! $config['image-source-control-isc'] ) {
@@ -69,13 +69,13 @@ function load_plugin() :void {
 	add_filter( 'pre_option_' . OPTION, __NAMESPACE__ . '\\re_set_dynamic_options', 20 );
 
 	// Fake a table-block, to load its styles!
-	add_filter( 'do_shortcode_tag', __NAMESPACE__ . '\\load_block_table_styles', 10, 3 );
+	add_filter( 'do_shortcode_tag', __NAMESPACE__ . '\\load_block_table_styles', 10, 2 );
 
 	if ( ! is_admin() ) {
 		return;
 	}
 
-	add_filter( 'attachment_fields_to_edit', __NAMESPACE__ . '\\remove_attachment_fields', 20, 2 );
+	add_filter( 'attachment_fields_to_edit', __NAMESPACE__ . '\\remove_attachment_fields', 20 );
 
 	add_action( 'admin_notices', __NAMESPACE__ . '\\remove_notices', 0 );
 	add_action( 'admin_menu', __NAMESPACE__ . '\\remove_menu', 11 );
@@ -90,7 +90,7 @@ function load_plugin() :void {
  *
  * @return void
  */
-function filter_options() :void {
+function filter_options(): void {
 
 	$_options = [
 		'display_type'              => [],
@@ -150,7 +150,7 @@ function filter_options() :void {
  *
  * @return array<string, mixed>
  */
-function re_set_dynamic_options( array|bool $option ) :array {
+function re_set_dynamic_options( array|bool $option ): array {
 
 	$option = ( is_array( $option ) ) ? $option : [];
 
@@ -161,9 +161,9 @@ function re_set_dynamic_options( array|bool $option ) :array {
 	$option['standard_source_text'] = '© ' . $_blogname;
 	// Why is the standard for option 'image_list_headline' disabled ? I dont know ...
 	// $option['image_list_headline']  = __('Image Sources','image-source-control-isc'); // ???
-	$option['source_pretext']       = __( 'Source:', 'image-source-control-isc' );
-	$option['thumbnail_width']      = get_option( 'thumbnail_size_w', 150 );
-	$option['thumbnail_height']     = get_option( 'thumbnail_size_h', 150 );
+	$option['source_pretext']   = __( 'Source:', 'image-source-control-isc' );
+	$option['thumbnail_width']  = get_option( 'thumbnail_size_w', 150 );
+	$option['thumbnail_height'] = get_option( 'thumbnail_size_h', 150 );
 
 	return $option;
 }
@@ -172,11 +172,10 @@ function re_set_dynamic_options( array|bool $option ) :array {
  * Filters the attachment fields to edit.
  *
  * @param string[] $fields     An array of attachment form fields.
- * @param WP_Post  $attachment The WP_Post attachment object.
  *
  * @return string[]
  */
-function remove_attachment_fields( array $fields, WP_Post $attachment ) :array {
+function remove_attachment_fields( array $fields ): array {
 	unset( $fields['isc_image_source_pro'] );
 	return $fields;
 }
@@ -190,13 +189,12 @@ function remove_attachment_fields( array $fields, WP_Post $attachment ) :array {
  *
  * @package figuren-theater/site_editing/image_source_control_isc
  *
- * @param   string          $output Shortcode output.
- * @param   string          $tag    Shortcode name.
- * @param   string|string[] $attr   Shortcode attributes array or empty string.
+ * @param   string $output Shortcode output.
+ * @param   string $tag    Shortcode name.
  *
  * @return  string                  Totally unchanged Shortcode output.
  */
-function load_block_table_styles( string $output, string $tag, string|array $attr ) :string {
+function load_block_table_styles( string $output, string $tag ): string {
 	// Make sure it is the right shortcode.
 	if ( 'isc_list_all' !== $tag ) {
 		return $output;
@@ -216,7 +214,7 @@ function load_block_table_styles( string $output, string $tag, string|array $att
  *
  * @return void
  */
-function remove_notices() :void {
+function remove_notices(): void {
 	remove_action( 'admin_notices', [ ISC_Admin::get_instance(), 'branded_admin_header' ] );
 }
 
@@ -225,7 +223,7 @@ function remove_notices() :void {
  *
  * @return void
  */
-function remove_menu() :void {
+function remove_menu(): void {
 	remove_submenu_page( 'options-general.php', 'isc-settings' );
 }
 
@@ -235,7 +233,7 @@ function remove_menu() :void {
  *
  * @return void
  */
-function remove_part_of_sources() :void {
+function remove_part_of_sources(): void {
 
 	?>
 	<script type="text/javascript">
@@ -255,7 +253,7 @@ function remove_part_of_sources() :void {
  *
  * @return void
  */
-function enqueue_css_fix() :void {
+function enqueue_css_fix(): void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'image-source-control-isc-fix',

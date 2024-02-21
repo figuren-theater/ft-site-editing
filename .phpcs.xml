@@ -3,11 +3,7 @@
 	<description>Coding standards for ft-site-editing</description>
 
 	<file>.</file>
-
-	<!--
-	<exclude-pattern>*/bin/*</exclude-pattern>
-	<exclude-pattern>*/tests/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern> -->
+	<arg name="basepath" value="./"/><!-- Strip the file paths down to the relevant bit -->
 
 	<!--
 	is created during composer install,
@@ -28,6 +24,11 @@
 				<element value="image-source-control-isc"/>
 			</property>
 		</properties>
+	</rule>
+	
+	<!-- No need to only have final classes. -->
+	<rule ref="Universal.Classes.RequireFinalClass.NonFinalClassFound">
+		<exclude-pattern>*/inc/*</exclude-pattern>
 	</rule>
 
 </ruleset>

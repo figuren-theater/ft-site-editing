@@ -8,12 +8,11 @@
 namespace Figuren_Theater\Site_Editing\Superlist_Block;
 
 use Figuren_Theater\Site_Editing;
-
+use WPMU_PLUGIN_URL;
 use function add_action;
 use function is_network_admin;
 use function is_user_admin;
 use function wp_enqueue_block_style;
-use WPMU_PLUGIN_URL;
 
 const BASENAME   = 'superlist-block/superlist-block.php';
 const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
@@ -23,7 +22,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	// Even the Plugin normally starts up at 'init:10',
 	// we want to hook into 'after_setup_theme' which runs before 'init'.
@@ -35,7 +34,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load_plugin() :void {
+function load_plugin(): void {
 
 	// Do only load in "normal" admin view
 	// and for public views
@@ -56,7 +55,7 @@ function load_plugin() :void {
  *
  * @return void
  */
-function enqueue_css_fix() :void {
+function enqueue_css_fix(): void {
 	// Same args used for wp_enqueue_style().
 	$args = [
 		'handle' => 'superlist-block-fix',
