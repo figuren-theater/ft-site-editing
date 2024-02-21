@@ -954,6 +954,7 @@
         },
         {
             "name": "ergebnis/composer-normalize",
+
             "version": "2.42.0",
             "source": {
                 "type": "git",
@@ -995,8 +996,7 @@
                 "composer-normalize": {
                     "indent-size": 2,
                     "indent-style": "space"
-                },
-                "plugin-optional": true
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -1024,7 +1024,6 @@
             ],
             "support": {
                 "issues": "https://github.com/ergebnis/composer-normalize/issues",
-                "security": "https://github.com/ergebnis/composer-normalize/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/composer-normalize"
             },
             "time": "2024-01-30T11:54:02+00:00"
@@ -1132,6 +1131,7 @@
             },
             "suggest": {
                 "composer/semver": "If you want to use ComposerJsonNormalizer or VersionConstraintNormalizer"
+
             },
             "type": "library",
             "autoload": {
@@ -1454,7 +1454,6 @@
             "description": "Coding standards for PHP, JavaScript and CSS within the figuren.theater WordPress Multisite network.",
             "homepage": "https://websites.fuer.figuren.theater",
             "keywords": [
-                "WordPressVIPMinimum",
                 "coding-standards",
                 "wordpress",
                 "wpcs"
@@ -1486,6 +1485,9 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "2.42.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.31"
             },
             "type": "phpstan-extension",
             "extra": {
