@@ -589,15 +589,15 @@
         },
         {
             "name": "wpackagist-plugin/block-visibility",
-            "version": "3.1.1",
+            "version": "3.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-visibility/",
-                "reference": "tags/3.1.1"
+                "reference": "tags/3.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-visibility.3.3.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -679,15 +679,15 @@
         },
         {
             "name": "wpackagist-plugin/image-source-control-isc",
-            "version": "2.14.2",
+            "version": "2.20.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/image-source-control-isc/",
-                "reference": "tags/2.14.2"
+                "reference": "tags/2.20.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.14.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/image-source-control-isc.2.20.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2542,15 +2542,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "16.6.0",
+            "version": "17.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/16.6.0"
+                "reference": "tags/17.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.16.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.7.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2568,5 +2568,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
