@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebb2c788bb6959a1ef28d399d2ec31f7",
+    "content-hash": "f5e6ffae0c1b36709a317f882d524c7b",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -694,24 +694,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/image-source-control-isc/"
-        },
-        {
-            "name": "wpackagist-plugin/lang-attribute",
-            "version": "0.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/lang-attribute/",
-                "reference": "tags/0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/lang-attribute.0.3.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/lang-attribute/"
         },
         {
             "name": "wpackagist-plugin/markdown-comment-block",
