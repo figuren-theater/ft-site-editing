@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5e6ffae0c1b36709a317f882d524c7b",
+    "content-hash": "f0e73b7615d95cf7b8cd054870986d8f",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -249,26 +249,25 @@
         },
         {
             "name": "figuren-theater/ft-network-block-patterns",
-            "version": "1.0.5",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-network-block-patterns.git",
-                "reference": "11e012b73d5b89d2904ef85201d8cc2f89d4135e"
+                "reference": "b77fa727e00ede86a75d3f71076013474526549a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/figuren-theater/ft-network-block-patterns/zipball/11e012b73d5b89d2904ef85201d8cc2f89d4135e",
-                "reference": "11e012b73d5b89d2904ef85201d8cc2f89d4135e",
+                "url": "https://api.github.com/repos/figuren-theater/ft-network-block-patterns/zipball/b77fa727e00ede86a75d3f71076013474526549a",
+                "reference": "b77fa727e00ede86a75d3f71076013474526549a",
                 "shasum": ""
             },
-            "require": {
-                "johnpbloch/wordpress": "^6.0",
-                "php": ">=7.1"
+            "require-dev": {
+                "figuren-theater/code-quality": "*"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0-or-later"
+                "GPL-3.0+"
             ],
             "authors": [
                 {
@@ -297,7 +296,7 @@
                 "issues": "https://github.com/figuren-theater/ft-network-block-patterns/issues",
                 "source": "https://github.com/figuren-theater/ft-network-block-patterns"
             },
-            "time": "2023-09-11T10:50:48+00:00"
+            "time": "2024-02-22T05:07:45+00:00"
         },
         {
             "name": "figuren-theater/ft-options",
@@ -2568,5 +2567,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
