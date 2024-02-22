@@ -33,7 +33,7 @@
         "php": ">=7.2",
         "carstingaxion/cbstdsys-post-subtitle": "0.1.1",
         "figuren-theater/ft-network-block-editor": "*",
-        "figuren-theater/ft-network-block-patterns": "*",
+        "figuren-theater/ft-network-block-patterns": "^1.1",
         "figuren-theater/ft-options": "^1.1",
         "wpackagist-plugin/abbreviation-button-for-the-block-editor": "^0.1",
         "wpackagist-plugin/block-catalog": "^1.4",
