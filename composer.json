@@ -45,7 +45,7 @@
         "wpackagist-plugin/image-source-control-isc": "^2",
         "wpackagist-plugin/markdown-comment-block": "^0.1",
         "wpackagist-plugin/newspaper-columns": "^1.0",
-        "wpackagist-plugin/social-sharing-block": "^0.9",
+        "wpackagist-plugin/social-sharing-block": "^1.0",
         "wpackagist-plugin/superlist-block": "^0.1",
         "wpackagist-plugin/todo-block": "^1.0"
     },
