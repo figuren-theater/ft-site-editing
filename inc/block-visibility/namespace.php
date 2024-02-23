@@ -144,8 +144,7 @@ function filter_options(): void {
 			),
 			'disabled_blocks'     => array(),
 			'plugin_settings'     => array(
-				'default_controls'              => array(
-				),
+				'default_controls'              => array(),
 				'enable_contextual_indicators'  => true,
 				'contextual_indicator_color'    => '',
 				'enable_block_opacity'          => true,
