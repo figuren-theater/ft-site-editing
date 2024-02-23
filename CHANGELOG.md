@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.5.1...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.6.0...HEAD)
+
+## [1.6.0](https://github.com/figuren-theater/ft-site-editing/compare/1.5.1...1.6.0) - 2024-02-23
+
+### 🚀 Better now
+
+- Remove 'Markdown comment block' in favor of already used 'block-visibility' ([#95](https://github.com/figuren-theater/ft-site-editing/pull/95))
+
+### Dependency Updates & Maintenance
+
+- Update version constraint for 'Gutenberg' to be more flexibel ([#94](https://github.com/figuren-theater/ft-site-editing/pull/94))
+- Upgrading wpackagist-plugin/social-sharing-block (0.9.0 => 1.0.0) ([#93](https://github.com/figuren-theater/ft-site-editing/pull/93))
+- Upgrading wpackagist-plugin/icon-block (1.5 => 1.7) ([#92](https://github.com/figuren-theater/ft-site-editing/pull/92))
+- Update 'block catalog' (1.5.3) ([#91](https://github.com/figuren-theater/ft-site-editing/pull/91))
+- Upgrading figuren-theater/ft-network-block-patterns (1.0.5 => 1.1.2) ([#90](https://github.com/figuren-theater/ft-site-editing/pull/90))
 
 ## [1.5.1](https://github.com/figuren-theater/ft-site-editing/compare/1.5.0...1.5.1) - 2024-02-21
 
