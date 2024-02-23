@@ -21,12 +21,11 @@ function register(): void {
 	$default_settings = [
 		'enabled'                  => true, // Needs to be set.
 		'block-catalog'            => false,
-		'block-visibility'         => false,
+		'block-visibility'         => true, // Decided to stay as default, 02/2024.
 		'copyright-block'          => true, // Needed by ft-network-block-patterns !
 		'dinosaur-game'            => false,
 		'embed-block-for-github'   => false,
 		'image-source-control-isc' => false,
-		'markdown-comment-block'   => false,
 		'newspaper-columns'        => true, // Needed by ft-network-block-patterns !
 		'superlist-block'          => true, // Needed by ft-network-block-patterns + Impressum !
 		'social-sharing-block'     => true, // Needed by ft-network-block-patterns !
@@ -65,7 +64,6 @@ function bootstrap(): void {
 	FT_Network_Block_Patterns\bootstrap();
 	Icon_Block\bootstrap();
 	Image_Source_Control_ISC\bootstrap();
-	Markdown_Comment_Block\bootstrap();
 	Newspaper_Columns\bootstrap();
 	Social_Sharing_Block\bootstrap();
 	Superlist_Block\bootstrap();
