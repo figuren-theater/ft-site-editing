@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fab08f2f6b7907d8c1ce97bf00be1486",
+    "content-hash": "2c806a19451a24789d8aa41ce7a07522",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -693,24 +693,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/image-source-control-isc/"
-        },
-        {
-            "name": "wpackagist-plugin/markdown-comment-block",
-            "version": "0.1.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/markdown-comment-block/",
-                "reference": "tags/0.1.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/markdown-comment-block.0.1.9.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/markdown-comment-block/"
         },
         {
             "name": "wpackagist-plugin/newspaper-columns",

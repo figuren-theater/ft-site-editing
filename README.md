@@ -62,7 +62,6 @@ Thoose are completely managed by code and lack of their typical UI.
 * [Embed Block for GitHub](https://wordpress.org/plugins/embed-block-for-github/#developers)
 * [Icon Block](https://wordpress.org/plugins/icon-block/#developers)
 * [Image Source Control](https://wordpress.org/plugins/image-source-control-isc/#developers)
-* [Markdown Comment Block](https://wordpress.org/plugins/markdown-comment-block/#developers)
 * [Newspaper Columns](https://wordpress.org/plugins/newspaper-columns/#developers)
 * [Social Sharing Block](https://wordpress.org/plugins/social-sharing-block/#developers)
 * [Superlist Block](https://wordpress.org/plugins/superlist-block/#developers)
