@@ -50,7 +50,7 @@
     },
     "require-dev": {
         "figuren-theater/code-quality": "*",
-        "wpackagist-plugin/gutenberg": "^17.7"
+        "wpackagist-plugin/gutenberg": "^18.3"
     },
     "repositories": [
         {
