@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c806a19451a24789d8aa41ce7a07522",
+    "content-hash": "e4940038b0097da8db456b258ee704e3",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -2524,15 +2524,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "17.7.0",
+            "version": "19.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/17.7.0"
+                "reference": "tags/19.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.17.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.19.4.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
