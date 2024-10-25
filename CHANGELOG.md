@@ -2,7 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.6.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.7.0...HEAD)
+
+## [1.7.0](https://github.com/figuren-theater/ft-site-editing/compare/1.6.0...1.7.0) - 2024-10-25
+
+### Dependency Updates & Maintenance
+
+- Bump figuren-theater/code-quality from 1.1.1 to 1.2.1 ([#121](https://github.com/figuren-theater/ft-site-editing/pull/121))
+- Bump wpackagist-plugin/todo-block from 1.0.7 to 1.1.1 ([#106](https://github.com/figuren-theater/ft-site-editing/pull/106))
+- Bump wpackagist-plugin/gutenberg from 17.7.0 to 19.4.0 ([#116](https://github.com/figuren-theater/ft-site-editing/pull/116))
+- Bump wpackagist-plugin/image-source-control-isc from 2.20.1 to 2.27.0 ([#117](https://github.com/figuren-theater/ft-site-editing/pull/117))
+- Bump wpackagist-plugin/block-catalog from 1.5.3 to 1.6.1 ([#118](https://github.com/figuren-theater/ft-site-editing/pull/118))
+- Bump wpackagist-plugin/social-sharing-block from 1.0.0 to 1.2.0 ([#119](https://github.com/figuren-theater/ft-site-editing/pull/119))
+- Bump wpackagist-plugin/block-visibility from 3.3.0 to 3.6.1 ([#115](https://github.com/figuren-theater/ft-site-editing/pull/115))
+- Bump wpackagist-plugin/icon-block from 1.7.0 to 1.9.0 ([#114](https://github.com/figuren-theater/ft-site-editing/pull/114))
+- Bump figuren-theater/ft-network-block-editor from 0.6.0 to 0.6.1 ([#96](https://github.com/figuren-theater/ft-site-editing/pull/96))
+- Bump figuren-theater/ft-options from 1.2.3 to 1.2.5 ([#97](https://github.com/figuren-theater/ft-site-editing/pull/97))
 
 ## [1.6.0](https://github.com/figuren-theater/ft-site-editing/compare/1.5.1...1.6.0) - 2024-02-23
 
