@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4940038b0097da8db456b258ee704e3",
+    "content-hash": "af594a1fe8c0663893e66023e1e0327d",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -661,15 +661,15 @@
         },
         {
             "name": "wpackagist-plugin/icon-block",
-            "version": "1.9.0",
+            "version": "2.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/icon-block/",
-                "reference": "tags/1.9.0"
+                "reference": "tags/2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/icon-block.1.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/icon-block.2.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
