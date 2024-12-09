@@ -2557,7 +2557,7 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "19.7.0",
+            "version": "19.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
@@ -2565,7 +2565,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.zip?timestamp=1732127388"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.zip?timestamp=1733318035"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
