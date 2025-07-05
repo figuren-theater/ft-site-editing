@@ -30,7 +30,7 @@
         "source": "https://github.com/figuren-theater/ft-site-editing"
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=8.2",
         "carstingaxion/cbstdsys-post-subtitle": "0.1.1",
         "figuren-theater/ft-network-block-editor": "*",
         "figuren-theater/ft-network-block-patterns": "^1.1",
