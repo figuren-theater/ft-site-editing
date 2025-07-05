@@ -42,7 +42,7 @@
         "wpackagist-plugin/dinosaur-game": "^1.0",
         "wpackagist-plugin/embed-block-for-github": "^0.3",
         "wpackagist-plugin/icon-block": "^2.0",
-        "wpackagist-plugin/image-source-control-isc": "^2",
+        "wpackagist-plugin/image-source-control-isc": "^3",
         "wpackagist-plugin/newspaper-columns": "^1.0",
         "wpackagist-plugin/social-sharing-block": "^1.0",
         "wpackagist-plugin/superlist-block": "^0.1",
