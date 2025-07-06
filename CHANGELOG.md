@@ -2,7 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.7.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.8.0...HEAD)
+
+## [1.8.0](https://github.com/figuren-theater/ft-site-editing/compare/1.7.0...1.8.0) - 2025-07-06
+
+- Increase minimum req. PHP version to 8.2 (to make dependabot work again) ([#138](https://github.com/figuren-theater/ft-site-editing/pull/138))
+
+### Dependency Updates & Maintenance
+
+- Bump wpackagist-plugin/image-source-control-isc from 2.29.0 to 3.3.0 ([#143](https://github.com/figuren-theater/ft-site-editing/pull/143))
+- Bump wpackagist-plugin/superlist-block from 0.1.1 to 0.1.4 ([#142](https://github.com/figuren-theater/ft-site-editing/pull/142))
+- Bump wpackagist-plugin/block-catalog from 1.6.1 to 1.6.2 ([#141](https://github.com/figuren-theater/ft-site-editing/pull/141))
+- Bump figuren-theater/code-quality from 1.2.1 to 2.0.0 ([#140](https://github.com/figuren-theater/ft-site-editing/pull/140))
+- Bump wpackagist-plugin/gutenberg from 19.7.0 to 19.9.0 ([#136](https://github.com/figuren-theater/ft-site-editing/pull/136))
+- Bump wpackagist-plugin/block-visibility from 3.7.0 to 3.7.1 ([#134](https://github.com/figuren-theater/ft-site-editing/pull/134))
+- Bump wpackagist-plugin/gutenberg from 19.6.4 to 19.7.0 ([#133](https://github.com/figuren-theater/ft-site-editing/pull/133))
+- Bump wpackagist-plugin/gutenberg from 19.6.2 to 19.6.4 ([#132](https://github.com/figuren-theater/ft-site-editing/pull/132))
+- Bump wpackagist-plugin/image-source-control-isc from 2.28.1 to 2.29.0 ([#130](https://github.com/figuren-theater/ft-site-editing/pull/130))
+- Bump wpackagist-plugin/gutenberg from 19.5.0 to 19.6.2 ([#129](https://github.com/figuren-theater/ft-site-editing/pull/129))
+- Bump wpackagist-plugin/icon-block from 1.9.0 to 2.0.0 ([#126](https://github.com/figuren-theater/ft-site-editing/pull/126))
+- Bump wpackagist-plugin/block-visibility from 3.6.1 to 3.7.0 ([#125](https://github.com/figuren-theater/ft-site-editing/pull/125))
+- Bump wpackagist-plugin/social-sharing-block from 1.2.0 to 1.3.0 ([#128](https://github.com/figuren-theater/ft-site-editing/pull/128))
+- Bump wpackagist-plugin/image-source-control-isc from 2.27.0 to 2.28.1 ([#122](https://github.com/figuren-theater/ft-site-editing/pull/122))
+- Bump wpackagist-plugin/gutenberg from 19.4.0 to 19.5.0 ([#123](https://github.com/figuren-theater/ft-site-editing/pull/123))
 
 ## [1.7.0](https://github.com/figuren-theater/ft-site-editing/compare/1.6.0...1.7.0) - 2024-10-25
 
