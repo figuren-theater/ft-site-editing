@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d680d023d7dbed040e0f7d45eb13a6c3",
+    "content-hash": "7b21dc00bc27496abbd6bee0260610f3",
     "packages": [
         {
             "name": "carstingaxion/cbstdsys-post-subtitle",
@@ -2632,15 +2632,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "21.1.0",
+            "version": "22.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/21.1.0"
+                "reference": "tags/22.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.21.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.22.1.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -2651,12 +2651,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
