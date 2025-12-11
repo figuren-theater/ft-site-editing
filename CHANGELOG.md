@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.8.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-site-editing/compare/1.8.1...HEAD)
+
+## [1.8.1](https://github.com/figuren-theater/ft-site-editing/compare/1.8.0...1.8.1) - 2025-12-11
+
+### Dependency Updates & Maintenance
+
+- Bump wpackagist-plugin/gutenberg from 21.1.0 to 22.2.0 ([#159](https://github.com/figuren-theater/ft-site-editing/pull/159))
 
 ## [1.8.0](https://github.com/figuren-theater/ft-site-editing/compare/1.7.0...1.8.0) - 2025-07-06
 
