@@ -2632,15 +2632,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "22.3.0",
+            "version": "22.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/22.3.0"
+                "reference": "tags/22.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.22.3.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.22.4.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
